@@ -6,7 +6,7 @@ cd "$HOME"
 
 if [ ! -d circuit-ai/.git ]; then
   echo "==> Downloading CIRCUIT AI ..."
-  git clone -b arena/f57eb4c4-circuit-ai https://github.com/Draxx143/circuit-ai.git
+  git clone https://github.com/Draxx143/circuit-ai.git
 else
   echo "==> Updating CIRCUIT AI ..."
   git -C circuit-ai pull --ff-only || true
@@ -14,11 +14,11 @@ fi
 
 cd circuit-ai
 echo "==> Installing dependencies (first run only, needs internet) ..."
-./run.sh --install
+./run-desktop.sh --install
 
 echo ""
 echo "==> Starting CIRCUIT AI ..."
-echo "==> Open this address in your browser:  http://127.0.0.1:8501"
+echo "==> Open this address in your browser:  پنجره برنامه به‌صورت خودکار باز می‌شود (مرورگر لازم نیست)"
 echo "==> To stop the program press:  Ctrl+C"
 echo ""
-exec ./run.sh
+exec ./run-desktop.sh
