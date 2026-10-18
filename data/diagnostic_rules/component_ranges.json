@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "note": "Profiles expose only checks whose exact part, input pin aliases, unit, source and recommended operating range are specified. Adding a profile does not assert a component defect.",
+  "profiles": [
+    {
+      "profile_code": "PROFILE_LM2596_VIN_RANGE",
+      "part_number": "LM2596",
+      "operating_range_key": "input_voltage_v",
+      "signal_aliases": ["VIN", "V_IN", "input_voltage", "input_voltage_at_ic", "vin_at_ic"],
+      "pin_description": "VIN pin 1 measured relative to the actual circuit GND, per identified package/schematic.",
+      "measurement_unit": "V",
+      "description": "Checks only the TI Operating Conditions input range for an identified LM2596-family device. Not a diagnosis of a failed regulator.",
+      "source_key": "ti_lm2596_ds_rev_g",
+      "validation_status": "official_datasheet_reviewed",
+      "notes": "Family/package/variant and board conditions must still be confirmed by the repairer."
+    },
+    {
+      "profile_code": "PROFILE_TPS5430_VIN_RANGE",
+      "part_number": "TPS5430",
+      "operating_range_key": "input_voltage_v",
+      "signal_aliases": ["VIN", "V_IN", "input_voltage", "input_voltage_at_ic", "vin_at_ic"],
+      "pin_description": "VIN pin 7 measured relative to the actual circuit GND, for TPS5430 DDA package.",
+      "measurement_unit": "V",
+      "description": "Checks only TPS5430 Recommended Operating Conditions; TPS5431 is a different device/range.",
+      "source_key": "ti_tps5430_ds_rev_l",
+      "validation_status": "official_datasheet_reviewed",
+      "notes": "Do not compare the VIN pin to the absolute maximum as if it were a normal operating range."
+    },
+    {
+      "profile_code": "PROFILE_DRV8825_VM_RANGE",
+      "part_number": "DRV8825",
+      "operating_range_key": "motor_supply_vm_v",
+      "signal_aliases": ["VM", "VMA", "VMB", "VM_supply", "motor_supply", "motor_supply_voltage"],
+      "pin_description": "VMA pin 4 or VMB pin 11 measured relative to device GND; datasheet requires VM pins to share supply.",
+      "measurement_unit": "V",
+      "description": "Checks only DRV8825 Recommended Operating Conditions for motor supply VM; it does not test current setting or thermal capacity.",
+      "source_key": "ti_drv8825_ds_rev_f",
+      "validation_status": "official_datasheet_reviewed",
+      "notes": "Current capability is conditional on board thermal design and the datasheet test conditions."
+    }
+  ]
+}

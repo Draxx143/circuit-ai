@@ -1,0 +1,25 @@
+{
+  "generated_on": "2026-10-18",
+  "database_file": "runtime: $XDG_DATA_HOME/circuit-ai/circuit_ai.sqlite3 (seed catalog is data/seed_catalog.json)",
+  "schema_version": "4",
+  "counts": {
+    "components": 20,
+    "component_diagnostic_profiles": 3,
+    "diagnostic_profiles_needing_review": 0,
+    "official_component_sources": 5,
+    "component_records_needing_review": 15,
+    "components_without_pin_records": 8,
+    "components_without_recommended_operating_data": 17,
+    "component_records_with_intentional_unknowns": 17,
+    "sources": 21,
+    "official_datasheets_reviewed": 5,
+    "topologies": 3,
+    "failure_modes": 5,
+    "rules": 14,
+    "rules_needing_review": 14,
+    "unverified_cases": 0,
+    "lab_tested_components": 0,
+    "component_official_source_percent": 25.0
+  },
+  "inspection": "SQLite integrity_check=ok; foreign_key_check errors=0; catalogue v2: 5 datasheet-reviewed + 15 needs_review reference components; conditional rules require recorded measurements."
+}
