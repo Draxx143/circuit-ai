@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=CIRCUIT AI
+Comment=Intelligent Electronics Diagnostics
+Exec=/opt/circuit-ai/circuit-ai
+Icon=circuit-ai
+Terminal=false
+Categories=Development;Electronics;Engineering;
+StartupWMClass=circuit-ai
