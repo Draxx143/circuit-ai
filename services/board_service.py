@@ -88,14 +88,20 @@ def get_board(board_id: int, *, db_path=None) -> dict[str, Any] | None:
         if row is None:
             return None
         board = dict(row)
+        meas: dict[int, list[dict[str, Any]]] = {}
+        for m in conn.execute(
+                """SELECT bm.* FROM board_pin_measurements bm
+                   JOIN board_pins pn ON pn.id=bm.pin_id
+                   JOIN board_parts p ON p.id=pn.part_id
+                   WHERE p.board_id=? ORDER BY bm.created_at, bm.id""", (board_id,)):
+            meas.setdefault(int(m["pin_id"]), []).append(dict(m))
         board["parts"] = []
         for prow in conn.execute("SELECT * FROM board_parts WHERE board_id=? ORDER BY ref", (board_id,)):
             part = dict(prow)
             part["pins"] = []
             for pin in conn.execute("SELECT * FROM board_pins WHERE part_id=? ORDER BY pin_name", (part["id"],)):
                 item = dict(pin)
-                item["measurements"] = [dict(m) for m in conn.execute(
-                    "SELECT * FROM board_pin_measurements WHERE pin_id=? ORDER BY created_at", (pin["id"],))]
+                item["measurements"] = meas.get(int(pin["id"]), [])
                 item["diode_mv"] = next((m["value"] for m in item["measurements"]
                                           if m["kind"] == "diode_mv"), None)
                 part["pins"].append(item)
@@ -170,3 +176,22 @@ def pin_measurements(pin_id: int, *, db_path=None) -> list[dict[str, Any]]:
     with db_session(db_path) as conn:
         return [dict(r) for r in conn.execute(
             "SELECT * FROM board_pin_measurements WHERE pin_id=? ORDER BY created_at, id", (pin_id,))]
+
+
+def seed_bundled_boards(*, db_path=None) -> int:
+    """Import bundled sample/real boards once, when the user has no boards yet."""
+    from services.db import PROJECT_ROOT
+    with db_session(db_path) as conn:
+        count = conn.execute("SELECT COUNT(*) FROM boards").fetchone()[0]
+    if count:
+        return 0
+    imported = 0
+    for folder in ("real_boards", "sample_boards"):
+        directory = PROJECT_ROOT / "data" / folder
+        if not directory.exists():
+            continue
+        for file in sorted(directory.glob("*.board.json")):
+            from boardview.model import load_board_json
+            import_board(load_board_json(file), source_file=str(file), db_path=db_path)
+            imported += 1
+    return imported

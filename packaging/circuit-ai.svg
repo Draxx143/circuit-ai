@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect x="8" y="8" width="240" height="240" rx="42" fill="#0B1520"/>
+  <rect x="8" y="8" width="240" height="240" rx="42" fill="none" stroke="#00D1B2" stroke-width="6"/>
+  <g stroke="#00D1B2" stroke-width="10" stroke-linecap="round">
+    <line x1="88" y1="28" x2="88" y2="62"/><line x1="128" y1="28" x2="128" y2="62"/>
+    <line x1="168" y1="28" x2="168" y2="62"/>
+    <line x1="88" y1="194" x2="88" y2="228"/><line x1="128" y1="194" x2="128" y2="228"/>
+    <line x1="168" y1="194" x2="168" y2="228"/>
+    <line x1="28" y1="88" x2="62" y2="88"/><line x1="28" y1="128" x2="62" y2="128"/>
+    <line x1="28" y1="168" x2="62" y2="168"/>
+    <line x1="194" y1="88" x2="228" y2="88"/><line x1="194" y1="128" x2="228" y2="128"/>
+    <line x1="194" y1="168" x2="228" y2="168"/>
+  </g>
+  <rect x="62" y="62" width="132" height="132" rx="18" fill="#123A2A" stroke="#2E7D5B" stroke-width="5"/>
+  <path d="M86 150 L112 104 L126 132 L140 96 L156 138 L170 112" fill="none" stroke="#4DA3FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="86" cy="150" r="8" fill="#00D1B2"/>
+  <circle cx="170" cy="112" r="8" fill="#00D1B2"/>
+</svg>

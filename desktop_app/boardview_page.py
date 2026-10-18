@@ -25,6 +25,7 @@ try:
 except Exception:  # QtPdf is optional
     QPdfDocument = None
 
+from boardview.kicad import load_kicad_pcb
 from boardview.model import load_board_csv, load_board_json
 from services.board_service import (
     add_part, delete_board, get_board, import_board, import_image_board,
@@ -87,6 +88,47 @@ class PinItem(QGraphicsEllipseItem):
         self.setData(0, {"type": "pin", "pin_id": pin["id"], "part_ref": part_ref, "net": pin.get("net", "")})
 
 
+class PinLayerItem(QGraphicsItem):
+    """All pins of a large board drawn by ONE item (real boards have 1000+
+    pads; one QGraphicsItem per pad would be slow and memory-heavy).
+    Small boards keep individual PinItem objects; large boards use this
+    layer and resolve clicks by nearest-pin lookup in the page."""
+
+    def __init__(self, entries, width, height, *, show_values=True, draw_traces=True):
+        super().__init__()
+        self.entries = entries  # list of (pin, part_ref, side)
+        self.width, self.height = width, height
+        self.show_values, self.draw_traces = show_values, draw_traces
+        self.highlight = ""
+        self.setZValue(2)
+
+    def boundingRect(self):
+        return QRectF(0, 0, self.width, self.height)
+
+    def paint(self, painter, option, widget=None):
+        from PySide6.QtCore import QPointF as _QP
+        if self.draw_traces:
+            by_net: dict[str, list] = {}
+            for pin, _ref, _side in self.entries:
+                if pin.get("net"):
+                    by_net.setdefault(pin["net"], []).append(pin)
+            painter.setPen(QPen(QColor(80, 200, 160, 28), 0.18))
+            for pins in by_net.values():
+                for a, b in zip(pins, pins[1:]):
+                    painter.drawLine(_QP(a["x_mm"], a["y_mm"]), _QP(b["x_mm"], b["y_mm"]))
+        painter.setPen(QPen(QColor("#0B0F14"), 0.12))
+        r = 0.85
+        for pin, _ref, _side in self.entries:
+            is_net = bool(self.highlight) and (pin.get("net") or "").lower() == self.highlight.lower()
+            if is_net:
+                painter.setBrush(QBrush(QColor("#00D1B2")))
+                painter.drawEllipse(_QP(pin["x_mm"], pin["y_mm"]), r * 1.5, r * 1.5)
+            else:
+                color = diode_color(pin.get("diode_mv")) if self.show_values else QColor("#D9C25A")
+                painter.setBrush(QBrush(color))
+                painter.drawEllipse(_QP(pin["x_mm"], pin["y_mm"]), r, r)
+
+
 class PartItem(QGraphicsRectItem):
     def __init__(self, part):
         w, h = max(part["w_mm"], 1.6), max(part["h_mm"], 1.2)
@@ -115,6 +157,8 @@ class BoardViewPage(QWidget):
         self.board = None
         self.part_items: dict[str, PartItem] = {}
         self.pin_items: dict[int, PinItem] = {}
+        self.pin_layer = None
+        self.large_mode = False
         self.selected_net = ""
         self.selected_pin = None
 
@@ -125,7 +169,7 @@ class BoardViewPage(QWidget):
 
         # ---- toolbar
         bar = QHBoxLayout()
-        self.btn_json = QPushButton("بازکردن فایل برد (JSON)"); self.btn_json.clicked.connect(self.open_json)
+        self.btn_json = QPushButton("بازکردن فایل برد (JSON / KiCad)"); self.btn_json.clicked.connect(self.open_json)
         self.btn_csv = QPushButton("واردکردن CSV قطعات/پین‌ها"); self.btn_csv.clicked.connect(self.open_csv)
         self.btn_img = QPushButton("بازکردن عکس برد"); self.btn_img.clicked.connect(self.open_image)
         self.btn_sample = QPushButton("برد نمونه آموزشی"); self.btn_sample.setObjectName("primary")
@@ -227,6 +271,11 @@ class BoardViewPage(QWidget):
             label = f"{b['name']} · {b['part_count']} قطعه · {b['pin_count']} پین" + (" · نمونه" if b["is_sample"] else "")
             item = QListWidgetItem(label); item.setData(Qt.ItemDataRole.UserRole, b["id"])
             self.boards_list.addItem(item)
+        if self.board is None:
+            boards = list_boards(db_path=self.db)
+            if boards:
+                first = next((b for b in boards if not b["is_sample"]), boards[0])
+                self._load_board_id(int(first["id"]))
         cases = list_cases(path=self.db)
         self.meas_case.clear(); self.meas_case.addItem("بدون اتصال به پرونده", None)
         for c in cases:
@@ -263,10 +312,12 @@ class BoardViewPage(QWidget):
             self.board = None; self.scene.clear(); self.refresh()
 
     def open_json(self):
-        path, _ = QFileDialog.getOpenFileName(self, "فایل برد JSON", "", "Board JSON (*.json)")
+        path, _ = QFileDialog.getOpenFileName(self, "فایل برد", "",
+                                              "Board files (*.json *.kicad_pcb);;Board JSON (*.json);;KiCad PCB (*.kicad_pcb)")
         if not path: return
         try:
-            board_id = import_board(load_board_json(path), source_file=path, db_path=self.db)
+            data = load_kicad_pcb(path) if path.lower().endswith(".kicad_pcb") else load_board_json(path)
+            board_id = import_board(data, source_file=path, db_path=self.db)
         except Exception as exc:
             return QMessageBox.warning(self, "خطای فایل برد", str(exc))
         self.refresh(); self._load_board_id(board_id)
@@ -306,9 +357,12 @@ class BoardViewPage(QWidget):
 
     # ---------------- rendering
     def redraw(self):
-        self.scene.clear(); self.part_items = {}; self.pin_items = {}
+        self.scene.clear(); self.part_items = {}; self.pin_items = {}; self.pin_layer = None
         if not self.board:
             return
+        total_pins = sum(len(p["pins"]) for p in self.board["parts"])
+        self.large_mode = total_pins > 300
+        self.view.pick_mode = self.large_mode
         w, h = self.board["width_mm"], self.board["height_mm"]
         self.scene.setSceneRect(-4, -4, w + 8, h + 8)
         image_path = self.board.get("image_path") or ""
@@ -323,21 +377,32 @@ class BoardViewPage(QWidget):
             bg = QGraphicsRectItem(0, 0, w, h)
             bg.setBrush(QBrush(QColor("#123A2A"))); bg.setPen(QPen(QColor("#2E7D5B"), 0.2))
             bg.setZValue(-10); self.scene.addItem(bg)
-            if self.chk_traces.isChecked():
+            if self.chk_traces.isChecked() and not self.large_mode:
                 self._draw_traces()
         side_mode = self.side_combo.currentIndex()  # 0 top, 1 bottom, 2 both
+
+        def _visible(part):
+            return side_mode == 2 or (side_mode == 0 and part["side"] == "top") or (side_mode == 1 and part["side"] == "bottom")
+
         for part in self.board["parts"]:
-            visible = side_mode == 2 or (side_mode == 0 and part["side"] == "top") or (side_mode == 1 and part["side"] == "bottom")
+            visible = _visible(part)
             item = PartItem(part); item.setVisible(visible)
             if not self.chk_labels.isChecked():
                 for child in item.childItems(): child.setVisible(False)
             self.scene.addItem(item); self.part_items[part["ref"]] = item
-            for pin in part["pins"]:
-                pitem = PinItem(pin, part["ref"])
-                pitem.setVisible(visible and self.chk_pins.isChecked())
-                if not self.chk_values.isChecked():
-                    pitem.setBrush(QBrush(QColor("#D9C25A")))
-                self.scene.addItem(pitem); self.pin_items[pin["id"]] = pitem
+            if not self.large_mode:
+                for pin in part["pins"]:
+                    pitem = PinItem(pin, part["ref"])
+                    pitem.setVisible(visible and self.chk_pins.isChecked())
+                    if not self.chk_values.isChecked():
+                        pitem.setBrush(QBrush(QColor("#D9C25A")))
+                    self.scene.addItem(pitem); self.pin_items[pin["id"]] = pitem
+        if self.large_mode and self.chk_pins.isChecked():
+            entries = [(pin, part["ref"], part["side"]) for part in self.board["parts"] if _visible(part)
+                       for pin in part["pins"]]
+            self.pin_layer = PinLayerItem(entries, w, h, show_values=self.chk_values.isChecked(),
+                                          draw_traces=self.chk_traces.isChecked())
+            self.scene.addItem(self.pin_layer)
         self._highlight_net(self.selected_net, keep=True)
 
     def _draw_traces(self):
@@ -369,6 +434,19 @@ class BoardViewPage(QWidget):
 
     def _scene_clicked(self, pos: QPointF):
         if not self.board: return
+        if self.large_mode and not self.view.add_mode:
+            # Nearest pin within 2 mm wins (pin layer pick mode).
+            best = None
+            for part in self.board["parts"]:
+                for pin in part["pins"]:
+                    d = (pin["x_mm"] - pos.x()) ** 2 + (pin["y_mm"] - pos.y()) ** 2
+                    if best is None or d < best[0]:
+                        best = (d, part["ref"], pin)
+            if best and best[0] <= 4.0:
+                self.select_part(best[1], pin_id=best[2]["id"])
+                if best[2].get("net"):
+                    self.highlight_net(best[2]["net"])
+            return
         ref, ok = QInputDialog.getText(self, "قطعه جدید", "نام قطعه (Ref) مثل U7:")
         if not ok or not ref.strip(): return
         part_number, _ = QInputDialog.getText(self, "قطعه جدید", "شماره قطعه (اختیاری):")
@@ -447,6 +525,9 @@ class BoardViewPage(QWidget):
             fill_table(self.net_pins, rows)
 
     def _highlight_net(self, net: str, keep=False):
+        if self.pin_layer is not None:
+            self.pin_layer.highlight = net or ""
+            self.pin_layer.update()
         for pin_id, item in self.pin_items.items():
             is_net = bool(net) and item.pin.get("net", "").lower() == net.lower()
             item.setBrush(QBrush(QColor("#00D1B2") if is_net else diode_color(item.pin.get("diode_mv"))))

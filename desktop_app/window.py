@@ -26,6 +26,7 @@ from core.electrical_calculations import (
 )
 from services.backup_service import create_backup, restore_backup
 from services.component_service import get_component, list_categories, search_components
+from services.board_service import seed_bundled_boards
 from services.db import database_path, init_db
 from services.knowledge_service import (
     list_failure_modes, list_rules, list_sources, list_topologies, quality_report,
@@ -511,7 +512,12 @@ class MainWindow(QMainWindow):
         for key, cls in self.PAGES.items():
             widget = cls(self); self.page_widgets[key] = widget; self.stack.addWidget(widget)
         self.nav.currentRowChanged.connect(self._on_nav)
-        self.nav.setCurrentRow(0)
+        try:
+            seed_bundled_boards(db_path=self.db_path)
+        except Exception:
+            pass  # a broken bundled file must never block the app from opening
+        # The product opens straight into the BoardView workspace.
+        self.nav.setCurrentRow([k for k, _ in NAV].index("boardview"))
 
         bar = self.statusBar()
         bar.showMessage(f"آماده · پایگاه داده: {self.db_path} · آفلاین (بدون ارسال داده به خارج)")

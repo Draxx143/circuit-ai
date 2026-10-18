@@ -3,11 +3,11 @@
 # Target: Ubuntu 24.04 with system PySide6 (universe). No bundled user data.
 set -euo pipefail
 ROOT="$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)"
-VERSION="${1:-2.0.0}"
+VERSION="${1:-3.0.0}"
 OUT="$ROOT/dist"; STAGE="$(mktemp -d)"; trap 'rm -rf "$STAGE"' EXIT
-mkdir -p "$OUT" "$STAGE/opt/circuit-ai" "$STAGE/usr/bin" "$STAGE/usr/share/applications" "$STAGE/DEBIAN"
+mkdir -p "$OUT" "$STAGE/opt/circuit-ai" "$STAGE/usr/bin" "$STAGE/usr/share/applications" "$STAGE/usr/share/icons/hicolor/scalable/apps" "$STAGE/DEBIAN"
 
-for item in desktop_app core services database data config tools pyproject.toml README.md; do
+for item in desktop_app boardview core services database data config tools pyproject.toml README.md; do
   cp -a "$ROOT/$item" "$STAGE/opt/circuit-ai/"
 done
 find "$STAGE/opt/circuit-ai" -name __pycache__ -type d -prune -exec rm -rf {} +
@@ -19,6 +19,7 @@ exec /usr/bin/python3 -m desktop_app "$@"
 LAUNCH
 chmod +x "$STAGE/usr/bin/circuit-ai"
 cp "$ROOT/packaging/circuit-ai.desktop" "$STAGE/usr/share/applications/"
+cp "$ROOT/packaging/circuit-ai.svg" "$STAGE/usr/share/icons/hicolor/scalable/apps/"
 
 cat > "$STAGE/DEBIAN/control" << CONTROL
 Package: circuit-ai
