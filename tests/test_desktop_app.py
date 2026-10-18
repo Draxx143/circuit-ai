@@ -17,7 +17,7 @@ def test_main_window_builds_all_pages(qapp, tmp_path):
     from desktop_app.window import NAV, MainWindow
 
     win = MainWindow(tmp_path / "desktop.sqlite3")
-    assert len(win.page_widgets) == len(NAV) == 8
+    assert len(win.page_widgets) == len(NAV) == 9
     for row in range(len(NAV)):
         win.nav.setCurrentRow(row)  # every page must build + refresh without error
     win.close()

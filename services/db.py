@@ -10,7 +10,7 @@ from typing import Any, Iterator
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = PROJECT_ROOT / "database" / "schema.sql"
-CURRENT_SCHEMA_VERSION = 4
+CURRENT_SCHEMA_VERSION = 5
 SEED_PATH = PROJECT_ROOT / "data" / "seed_catalog.json"
 
 

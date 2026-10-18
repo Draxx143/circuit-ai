@@ -271,4 +271,56 @@ CREATE INDEX IF NOT EXISTS idx_component_diag_profile_component ON component_dia
 CREATE INDEX IF NOT EXISTS idx_rules_enabled ON diagnostic_rules(enabled, priority);
 CREATE INDEX IF NOT EXISTS idx_sources_status ON sources(status, publisher);
 
-INSERT OR IGNORE INTO schema_meta(key, value) VALUES ('schema_version', '4');
+INSERT OR IGNORE INTO schema_meta(key, value) VALUES ('schema_version', '5');
+
+-- BoardView (schema v5): interactive board layouts, parts/pins/nets and
+-- per-pin measurements (diode-mode / voltage) optionally linked to a repair case.
+CREATE TABLE IF NOT EXISTS boards (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    source_file TEXT NOT NULL DEFAULT '',
+    format TEXT NOT NULL DEFAULT 'circuit-ai-board/1',
+    width_mm REAL NOT NULL DEFAULT 100,
+    height_mm REAL NOT NULL DEFAULT 80,
+    image_path TEXT NOT NULL DEFAULT '',
+    is_sample INTEGER NOT NULL DEFAULT 0 CHECK (is_sample IN (0,1)),
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+);
+
+CREATE TABLE IF NOT EXISTS board_parts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    board_id INTEGER NOT NULL REFERENCES boards(id) ON DELETE CASCADE,
+    ref TEXT NOT NULL,
+    part_number TEXT NOT NULL DEFAULT '',
+    package TEXT NOT NULL DEFAULT '',
+    side TEXT NOT NULL DEFAULT 'top' CHECK (side IN ('top','bottom')),
+    x_mm REAL NOT NULL, y_mm REAL NOT NULL,
+    rotation_deg REAL NOT NULL DEFAULT 0,
+    w_mm REAL NOT NULL DEFAULT 5, h_mm REAL NOT NULL DEFAULT 3,
+    UNIQUE(board_id, ref)
+);
+
+CREATE TABLE IF NOT EXISTS board_pins (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    part_id INTEGER NOT NULL REFERENCES board_parts(id) ON DELETE CASCADE,
+    pin_name TEXT NOT NULL,
+    net TEXT NOT NULL DEFAULT '',
+    x_mm REAL NOT NULL, y_mm REAL NOT NULL,
+    side TEXT NOT NULL DEFAULT 'top' CHECK (side IN ('top','bottom')),
+    UNIQUE(part_id, pin_name)
+);
+
+CREATE TABLE IF NOT EXISTS board_pin_measurements (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    pin_id INTEGER NOT NULL REFERENCES board_pins(id) ON DELETE CASCADE,
+    case_id INTEGER REFERENCES repair_cases(id) ON DELETE SET NULL,
+    kind TEXT NOT NULL CHECK (kind IN ('diode_mv','voltage_v','resistance_ohm','continuity')),
+    value REAL,
+    unit TEXT NOT NULL DEFAULT '',
+    note TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_board_parts_board ON board_parts(board_id, ref);
+CREATE INDEX IF NOT EXISTS idx_board_pins_net ON board_pins(net);
+CREATE INDEX IF NOT EXISTS idx_board_pin_meas_pin ON board_pin_measurements(pin_id, created_at);

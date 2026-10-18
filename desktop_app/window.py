@@ -36,6 +36,7 @@ from services.repair_service import (
 )
 from services.settings_service import get_setting, set_setting
 
+from .boardview_page import BoardViewPage
 from .helpers import fill_table, make_table, page_container, section_title, stat_card
 from .theme import stylesheet
 
@@ -43,6 +44,7 @@ NAV = [
     ("dashboard", "▦  داشبورد"),
     ("diagnosis", "⚕  عیب‌یابی جدید"),
     ("history", "▤  پرونده‌های تعمیر"),
+    ("boardview", "▩  BoardView نقشه برد"),
     ("components", "⌘  بانک قطعات"),
     ("knowledge", "▣  دانش مدار و قواعد"),
     ("calculators", "ƒx  محاسبات مهندسی"),
@@ -473,6 +475,7 @@ class SettingsPage(QWidget):
 
 class MainWindow(QMainWindow):
     PAGES = {"dashboard": DashboardPage, "diagnosis": DiagnosisPage, "history": HistoryPage,
+             "boardview": BoardViewPage,
              "components": ComponentsPage, "knowledge": KnowledgePage, "calculators": CalculatorsPage,
              "database": DatabasePage, "settings": SettingsPage}
 

@@ -1,0 +1,1084 @@
+{
+ "format": "circuit-ai-board/1",
+ "name": "SAMPLE — Motor Control Demo Board (داده نمونه آموزشی، برد واقعی نیست)",
+ "width_mm": 100,
+ "height_mm": 70,
+ "is_sample": true,
+ "notes": "Sample layout for learning BoardView. VM_MOTOR is shown as a separate net name for the demo; coordinates/values are illustrative, not a real product.",
+ "parts": [
+  {
+   "ref": "J1",
+   "part_number": "VIN-IN",
+   "package": "Terminal 2P",
+   "side": "top",
+   "x": 8,
+   "y": 10,
+   "rotation": 0,
+   "w": 10,
+   "h": 6,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "VIN",
+     "net": "VIN",
+     "x": 5.5,
+     "y": 10
+    },
+    {
+     "pin": "2",
+     "name": "GND",
+     "net": "GND",
+     "x": 10.5,
+     "y": 10,
+     "diode_mv": 2
+    }
+   ]
+  },
+  {
+   "ref": "F1",
+   "part_number": "Fuse 3A",
+   "package": "1206",
+   "side": "top",
+   "x": 20,
+   "y": 10,
+   "rotation": 0,
+   "w": 4,
+   "h": 2,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "IN",
+     "net": "VIN",
+     "x": 18,
+     "y": 10
+    },
+    {
+     "pin": "2",
+     "name": "OUT",
+     "net": "VIN_F",
+     "x": 22,
+     "y": 10
+    }
+   ]
+  },
+  {
+   "ref": "D1",
+   "part_number": "SMBJ24A",
+   "package": "SMB",
+   "side": "top",
+   "x": 28,
+   "y": 10,
+   "rotation": 0,
+   "w": 4,
+   "h": 2.5,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "K",
+     "net": "VIN_F",
+     "x": 26,
+     "y": 10,
+     "diode_mv": 680
+    },
+    {
+     "pin": "2",
+     "name": "A",
+     "net": "GND",
+     "x": 30,
+     "y": 10,
+     "diode_mv": 3
+    }
+   ]
+  },
+  {
+   "ref": "C1",
+   "part_number": "470uF/35V",
+   "package": "Electrolytic",
+   "side": "top",
+   "x": 36,
+   "y": 10,
+   "rotation": 0,
+   "w": 6,
+   "h": 6,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "+",
+     "net": "VIN_F",
+     "x": 34.5,
+     "y": 10,
+     "diode_mv": 520
+    },
+    {
+     "pin": "2",
+     "name": "-",
+     "net": "GND",
+     "x": 37.5,
+     "y": 10,
+     "diode_mv": 2
+    }
+   ]
+  },
+  {
+   "ref": "U1",
+   "part_number": "TPS5430",
+   "package": "SOIC-8 PowerPAD",
+   "side": "top",
+   "x": 50,
+   "y": 12,
+   "rotation": 0,
+   "w": 6,
+   "h": 5,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "BOOT",
+     "net": "BOOT",
+     "x": 47.4,
+     "y": 10.5,
+     "diode_mv": 640
+    },
+    {
+     "pin": "2",
+     "name": "NC",
+     "net": "",
+     "x": 47.4,
+     "y": 11.5
+    },
+    {
+     "pin": "3",
+     "name": "NC2",
+     "net": "",
+     "x": 47.4,
+     "y": 12.5
+    },
+    {
+     "pin": "4",
+     "name": "VSENSE",
+     "net": "FB_5V",
+     "x": 47.4,
+     "y": 13.5,
+     "diode_mv": 590
+    },
+    {
+     "pin": "5",
+     "name": "ENA",
+     "net": "ENA",
+     "x": 52.6,
+     "y": 13.5,
+     "diode_mv": 610
+    },
+    {
+     "pin": "6",
+     "name": "GND",
+     "net": "GND",
+     "x": 52.6,
+     "y": 12.5,
+     "diode_mv": 4
+    },
+    {
+     "pin": "7",
+     "name": "VIN",
+     "net": "VIN_F",
+     "x": 52.6,
+     "y": 11.5,
+     "diode_mv": 545
+    },
+    {
+     "pin": "8",
+     "name": "PH",
+     "net": "SW_5V",
+     "x": 52.6,
+     "y": 10.5,
+     "diode_mv": 430
+    }
+   ]
+  },
+  {
+   "ref": "L1",
+   "part_number": "10uH",
+   "package": "Inductor 7x7",
+   "side": "top",
+   "x": 60,
+   "y": 12,
+   "rotation": 0,
+   "w": 7,
+   "h": 7,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "IN",
+     "net": "SW_5V",
+     "x": 57,
+     "y": 12,
+     "diode_mv": 430
+    },
+    {
+     "pin": "2",
+     "name": "OUT",
+     "net": "VCC_5V",
+     "x": 63,
+     "y": 12,
+     "diode_mv": 505
+    }
+   ]
+  },
+  {
+   "ref": "D2",
+   "part_number": "SS34",
+   "package": "SMA",
+   "side": "top",
+   "x": 60,
+   "y": 20,
+   "rotation": 0,
+   "w": 4,
+   "h": 2,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "K",
+     "net": "VCC_5V",
+     "x": 58,
+     "y": 20,
+     "diode_mv": 505
+    },
+    {
+     "pin": "2",
+     "name": "A",
+     "net": "GND",
+     "x": 62,
+     "y": 20,
+     "diode_mv": 210
+    }
+   ]
+  },
+  {
+   "ref": "C3",
+   "part_number": "220uF",
+   "package": "Electrolytic",
+   "side": "top",
+   "x": 68,
+   "y": 12,
+   "rotation": 0,
+   "w": 5,
+   "h": 5,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "+",
+     "net": "VCC_5V",
+     "x": 66.8,
+     "y": 12,
+     "diode_mv": 505
+    },
+    {
+     "pin": "2",
+     "name": "-",
+     "net": "GND",
+     "x": 69.2,
+     "y": 12,
+     "diode_mv": 2
+    }
+   ]
+  },
+  {
+   "ref": "R1",
+   "part_number": "10k",
+   "package": "0603",
+   "side": "top",
+   "x": 50,
+   "y": 20,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "FB_5V",
+     "x": 49,
+     "y": 20,
+     "diode_mv": 590
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "VCC_5V",
+     "x": 51,
+     "y": 20,
+     "diode_mv": 505
+    }
+   ]
+  },
+  {
+   "ref": "R2",
+   "part_number": "3.16k",
+   "package": "0603",
+   "side": "top",
+   "x": 50,
+   "y": 23,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "FB_5V",
+     "x": 49,
+     "y": 23,
+     "diode_mv": 590
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "GND",
+     "x": 51,
+     "y": 23,
+     "diode_mv": 3
+    }
+   ]
+  },
+  {
+   "ref": "U2",
+   "part_number": "STM32F103C8 (SAMPLE)",
+   "package": "LQFP-48",
+   "side": "top",
+   "x": 30,
+   "y": 42,
+   "rotation": 0,
+   "w": 10,
+   "h": 10,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "VBAT",
+     "net": "VCC_3V3",
+     "x": 25.4,
+     "y": 37.8,
+     "diode_mv": 560
+    },
+    {
+     "pin": "7",
+     "name": "VDDA",
+     "net": "VCC_3V3",
+     "x": 25.4,
+     "y": 43.8,
+     "diode_mv": 560
+    },
+    {
+     "pin": "8",
+     "name": "VSSA",
+     "net": "GND",
+     "x": 25.4,
+     "y": 44.6,
+     "diode_mv": 3
+    },
+    {
+     "pin": "9",
+     "name": "VDD1",
+     "net": "VCC_3V3",
+     "x": 25.4,
+     "y": 45.4,
+     "diode_mv": 560
+    },
+    {
+     "pin": "23",
+     "name": "VSS2",
+     "net": "GND",
+     "x": 30.8,
+     "y": 46.6,
+     "diode_mv": 3
+    },
+    {
+     "pin": "24",
+     "name": "VDD2",
+     "net": "VCC_3V3",
+     "x": 31.6,
+     "y": 46.6,
+     "diode_mv": 560
+    },
+    {
+     "pin": "36",
+     "name": "VSS3",
+     "net": "GND",
+     "x": 28.4,
+     "y": 37.4,
+     "diode_mv": 3
+    },
+    {
+     "pin": "35",
+     "name": "VDD3",
+     "net": "VCC_3V3",
+     "x": 29.2,
+     "y": 37.4,
+     "diode_mv": 560
+    },
+    {
+     "pin": "5",
+     "name": "PD0-OSC_IN",
+     "net": "OSC_IN",
+     "x": 25.4,
+     "y": 39.4,
+     "diode_mv": 620
+    },
+    {
+     "pin": "6",
+     "name": "PD1-OSC_OUT",
+     "net": "OSC_OUT",
+     "x": 25.4,
+     "y": 40.2,
+     "diode_mv": 615
+    },
+    {
+     "pin": "34",
+     "name": "PA13-SWDIO",
+     "net": "SWDIO",
+     "x": 27.6,
+     "y": 37.4,
+     "diode_mv": 640
+    },
+    {
+     "pin": "37",
+     "name": "PA14-SWCLK",
+     "net": "SWCLK",
+     "x": 30,
+     "y": 37.4,
+     "diode_mv": 635
+    },
+    {
+     "pin": "20",
+     "name": "PB2-BOOT1",
+     "net": "BOOT1",
+     "x": 34.6,
+     "y": 46.2,
+     "diode_mv": 600
+    },
+    {
+     "pin": "44",
+     "name": "NRST",
+     "net": "NRST",
+     "x": 34.6,
+     "y": 40.2,
+     "diode_mv": 580
+    },
+    {
+     "pin": "17",
+     "name": "PA9-TX",
+     "net": "UART_TX",
+     "x": 34.6,
+     "y": 43.0,
+     "diode_mv": 655
+    },
+    {
+     "pin": "18",
+     "name": "PA10-RX",
+     "net": "UART_RX",
+     "x": 34.6,
+     "y": 43.8,
+     "diode_mv": 650
+    }
+   ]
+  },
+  {
+   "ref": "Y1",
+   "part_number": "8MHz XTAL",
+   "package": "HC49SMD",
+   "side": "top",
+   "x": 22,
+   "y": 38,
+   "rotation": 0,
+   "w": 5,
+   "h": 3,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "IN",
+     "net": "OSC_IN",
+     "x": 20,
+     "y": 38,
+     "diode_mv": 620
+    },
+    {
+     "pin": "2",
+     "name": "OUT",
+     "net": "OSC_OUT",
+     "x": 24,
+     "y": 38,
+     "diode_mv": 615
+    }
+   ]
+  },
+  {
+   "ref": "C8",
+   "part_number": "20pF",
+   "package": "0603",
+   "side": "top",
+   "x": 22,
+   "y": 43,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "OSC_IN",
+     "x": 21,
+     "y": 43,
+     "diode_mv": 620
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "GND",
+     "x": 23,
+     "y": 43,
+     "diode_mv": 3
+    }
+   ]
+  },
+  {
+   "ref": "C9",
+   "part_number": "20pF",
+   "package": "0603",
+   "side": "top",
+   "x": 22,
+   "y": 46,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "OSC_OUT",
+     "x": 21,
+     "y": 46,
+     "diode_mv": 615
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "GND",
+     "x": 23,
+     "y": 46,
+     "diode_mv": 3
+    }
+   ]
+  },
+  {
+   "ref": "R5",
+   "part_number": "10k NRST pull-up",
+   "package": "0603",
+   "side": "top",
+   "x": 38,
+   "y": 35,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "VCC_3V3",
+     "x": 37,
+     "y": 35,
+     "diode_mv": 560
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "NRST",
+     "x": 39,
+     "y": 35,
+     "diode_mv": 580
+    }
+   ]
+  },
+  {
+   "ref": "U3",
+   "part_number": "AMS1117-3.3",
+   "package": "SOT-223",
+   "side": "top",
+   "x": 44,
+   "y": 42,
+   "rotation": 0,
+   "w": 6,
+   "h": 6,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "GND",
+     "net": "GND",
+     "x": 42,
+     "y": 40,
+     "diode_mv": 3
+    },
+    {
+     "pin": "2",
+     "name": "VOUT",
+     "net": "VCC_3V3",
+     "x": 44,
+     "y": 39.2,
+     "diode_mv": 560
+    },
+    {
+     "pin": "3",
+     "name": "VIN",
+     "net": "VCC_5V",
+     "x": 46,
+     "y": 40,
+     "diode_mv": 505
+    }
+   ]
+  },
+  {
+   "ref": "U4",
+   "part_number": "DRV8825 (SAMPLE)",
+   "package": "HTSSOP-28",
+   "side": "top",
+   "x": 66,
+   "y": 42,
+   "rotation": 0,
+   "w": 11,
+   "h": 7,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "VCP",
+     "net": "VCP",
+     "x": 61.2,
+     "y": 39.6,
+     "diode_mv": 700
+    },
+    {
+     "pin": "2",
+     "name": "VM",
+     "net": "VM_MOTOR",
+     "x": 61.2,
+     "y": 40.8,
+     "diode_mv": 530
+    },
+    {
+     "pin": "3",
+     "name": "GND",
+     "net": "GND",
+     "x": 61.2,
+     "y": 42,
+     "diode_mv": 4
+    },
+    {
+     "pin": "4",
+     "name": "VMA",
+     "net": "VM_MOTOR",
+     "x": 61.2,
+     "y": 43.2,
+     "diode_mv": 530
+    },
+    {
+     "pin": "5",
+     "name": "AOUT1",
+     "net": "MOT_A1",
+     "x": 61.2,
+     "y": 44.4,
+     "diode_mv": 460
+    },
+    {
+     "pin": "6",
+     "name": "AISEN",
+     "net": "SEN_A",
+     "x": 63.6,
+     "y": 45.2,
+     "diode_mv": 390
+    },
+    {
+     "pin": "7",
+     "name": "AOUT2",
+     "net": "MOT_A2",
+     "x": 64.8,
+     "y": 45.2,
+     "diode_mv": 455
+    },
+    {
+     "pin": "8",
+     "name": "BOUT2",
+     "net": "MOT_B2",
+     "x": 67.2,
+     "y": 45.2,
+     "diode_mv": 455
+    },
+    {
+     "pin": "9",
+     "name": "BISEN",
+     "net": "SEN_B",
+     "x": 68.4,
+     "y": 45.2,
+     "diode_mv": 390
+    },
+    {
+     "pin": "10",
+     "name": "BOUT1",
+     "net": "MOT_B1",
+     "x": 70.8,
+     "y": 44.4,
+     "diode_mv": 460
+    },
+    {
+     "pin": "11",
+     "name": "VMB",
+     "net": "VM_MOTOR",
+     "x": 70.8,
+     "y": 43.2,
+     "diode_mv": 530
+    },
+    {
+     "pin": "12",
+     "name": "nFAULT",
+     "net": "NFAULT",
+     "x": 70.8,
+     "y": 42,
+     "diode_mv": 690
+    },
+    {
+     "pin": "13",
+     "name": "STEP",
+     "net": "STEP",
+     "x": 70.8,
+     "y": 40.8,
+     "diode_mv": 645
+    },
+    {
+     "pin": "14",
+     "name": "DIR",
+     "net": "DIR",
+     "x": 70.8,
+     "y": 39.6,
+     "diode_mv": 640
+    }
+   ]
+  },
+  {
+   "ref": "R10",
+   "part_number": "0.25R sense A",
+   "package": "1206",
+   "side": "top",
+   "x": 60,
+   "y": 50,
+   "rotation": 0,
+   "w": 3,
+   "h": 1.6,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "SEN_A",
+     "x": 58.5,
+     "y": 50,
+     "diode_mv": 390
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "GND",
+     "x": 61.5,
+     "y": 50,
+     "diode_mv": 4
+    }
+   ]
+  },
+  {
+   "ref": "R11",
+   "part_number": "0.25R sense B",
+   "package": "1206",
+   "side": "top",
+   "x": 72,
+   "y": 50,
+   "rotation": 0,
+   "w": 3,
+   "h": 1.6,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "SEN_B",
+     "x": 70.5,
+     "y": 50,
+     "diode_mv": 390
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "GND",
+     "x": 73.5,
+     "y": 50,
+     "diode_mv": 4
+    }
+   ]
+  },
+  {
+   "ref": "J2",
+   "part_number": "MOTOR OUT",
+   "package": "Terminal 4P",
+   "side": "top",
+   "x": 88,
+   "y": 42,
+   "rotation": 0,
+   "w": 8,
+   "h": 10,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A1",
+     "net": "MOT_A1",
+     "x": 88,
+     "y": 38.4,
+     "diode_mv": 460
+    },
+    {
+     "pin": "2",
+     "name": "A2",
+     "net": "MOT_A2",
+     "x": 88,
+     "y": 40.8,
+     "diode_mv": 455
+    },
+    {
+     "pin": "3",
+     "name": "B1",
+     "net": "MOT_B1",
+     "x": 88,
+     "y": 43.2,
+     "diode_mv": 460
+    },
+    {
+     "pin": "4",
+     "name": "B2",
+     "net": "MOT_B2",
+     "x": 88,
+     "y": 45.6,
+     "diode_mv": 455
+    }
+   ]
+  },
+  {
+   "ref": "J3",
+   "part_number": "SWD",
+   "package": "Header 4P",
+   "side": "top",
+   "x": 16,
+   "y": 60,
+   "rotation": 0,
+   "w": 10,
+   "h": 3,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "3V3",
+     "net": "VCC_3V3",
+     "x": 12.4,
+     "y": 60,
+     "diode_mv": 560
+    },
+    {
+     "pin": "2",
+     "name": "SWDIO",
+     "net": "SWDIO",
+     "x": 14.8,
+     "y": 60,
+     "diode_mv": 640
+    },
+    {
+     "pin": "3",
+     "name": "SWCLK",
+     "net": "SWCLK",
+     "x": 17.2,
+     "y": 60,
+     "diode_mv": 635
+    },
+    {
+     "pin": "4",
+     "name": "GND",
+     "net": "GND",
+     "x": 19.6,
+     "y": 60,
+     "diode_mv": 2
+    }
+   ]
+  },
+  {
+   "ref": "J4",
+   "part_number": "UART",
+   "package": "Header 3P",
+   "side": "top",
+   "x": 30,
+   "y": 60,
+   "rotation": 0,
+   "w": 8,
+   "h": 3,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "TX",
+     "net": "UART_TX",
+     "x": 27.6,
+     "y": 60,
+     "diode_mv": 655
+    },
+    {
+     "pin": "2",
+     "name": "RX",
+     "net": "UART_RX",
+     "x": 30,
+     "y": 60,
+     "diode_mv": 650
+    },
+    {
+     "pin": "3",
+     "name": "GND",
+     "net": "GND",
+     "x": 32.4,
+     "y": 60,
+     "diode_mv": 2
+    }
+   ]
+  },
+  {
+   "ref": "LED1",
+   "part_number": "GREEN",
+   "package": "0805",
+   "side": "top",
+   "x": 82,
+   "y": 14,
+   "rotation": 0,
+   "w": 2,
+   "h": 1.2,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "K",
+     "net": "GND",
+     "x": 81,
+     "y": 14,
+     "diode_mv": 3
+    },
+    {
+     "pin": "2",
+     "name": "A",
+     "net": "LED_A",
+     "x": 83,
+     "y": 14,
+     "diode_mv": 580
+    }
+   ]
+  },
+  {
+   "ref": "R20",
+   "part_number": "1k",
+   "package": "0603",
+   "side": "top",
+   "x": 82,
+   "y": 18,
+   "rotation": 0,
+   "w": 2,
+   "h": 1,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "A",
+     "net": "VCC_5V",
+     "x": 81,
+     "y": 18,
+     "diode_mv": 505
+    },
+    {
+     "pin": "2",
+     "name": "B",
+     "net": "LED_A",
+     "x": 83,
+     "y": 18,
+     "diode_mv": 580
+    }
+   ]
+  },
+  {
+   "ref": "TP1",
+   "part_number": "VM test point",
+   "package": "TestPoint",
+   "side": "top",
+   "x": 78,
+   "y": 34,
+   "rotation": 0,
+   "w": 2,
+   "h": 2,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "VM",
+     "net": "VM_MOTOR",
+     "x": 78,
+     "y": 34,
+     "diode_mv": 530
+    }
+   ]
+  },
+  {
+   "ref": "TP2",
+   "part_number": "3V3 test point",
+   "package": "TestPoint",
+   "side": "top",
+   "x": 44,
+   "y": 54,
+   "rotation": 0,
+   "w": 2,
+   "h": 2,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "3V3",
+     "net": "VCC_3V3",
+     "x": 44,
+     "y": 54,
+     "diode_mv": 560
+    }
+   ]
+  },
+  {
+   "ref": "Q1",
+   "part_number": "IRLZ44N (sample load switch)",
+   "package": "TO-220",
+   "side": "top",
+   "x": 88,
+   "y": 58,
+   "rotation": 0,
+   "w": 5,
+   "h": 8,
+   "pins": [
+    {
+     "pin": "1",
+     "name": "G",
+     "net": "LOAD_GATE",
+     "x": 86.2,
+     "y": 61,
+     "diode_mv": 610
+    },
+    {
+     "pin": "2",
+     "name": "D",
+     "net": "VM_MOTOR",
+     "x": 88,
+     "y": 61,
+     "diode_mv": 530
+    },
+    {
+     "pin": "3",
+     "name": "S",
+     "net": "LOAD_OUT",
+     "x": 89.8,
+     "y": 61,
+     "diode_mv": 470
+    }
+   ]
+  }
+ ]
+}
