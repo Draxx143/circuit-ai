@@ -83,7 +83,7 @@ def test_additive_schema_migration_v1_to_current_adds_input_source_and_profiles(
     old_schema = old_schema.replace(
         "CREATE INDEX IF NOT EXISTS idx_component_diag_profile_component ON component_diagnostic_profiles(component_id);\n", ""
     )
-    old_schema = old_schema.replace("VALUES ('schema_version', '4');", "VALUES ('schema_version', '1');")
+    old_schema = old_schema.replace("VALUES ('schema_version', '5');", "VALUES ('schema_version', '1');")
     conn = sqlite3.connect(old_path)
     conn.executescript(old_schema)
     conn.close()
@@ -92,7 +92,7 @@ def test_additive_schema_migration_v1_to_current_adds_input_source_and_profiles(
         columns = {row[1] for row in conn.execute("PRAGMA table_info(repair_cases)")}
         assert "expected_input_source" in columns
         version = conn.execute("SELECT value FROM schema_meta WHERE key='schema_version'").fetchone()[0]
-        assert version == "4"
+        assert version == "5"
         assert conn.execute(
             "SELECT 1 FROM sqlite_master WHERE type='table' AND name='component_diagnostic_profiles'"
         ).fetchone()

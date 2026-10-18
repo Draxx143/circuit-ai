@@ -27,7 +27,7 @@ Section: electronics
 Priority: optional
 Architecture: all
 Maintainer: CIRCUIT AI Project <local@circuit-ai.invalid>
-Depends: python3 (>= 3.10), python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets, libgl1, libegl1, libxkbcommon0
+Depends: python3 (>= 3.10), python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets, python3-pyside6.qtpdf, libgl1, libegl1, libxkbcommon0
 Description: Intelligent Electronics Diagnostics
  Offline desktop workbench for electronics board diagnosis:
  rule-based diagnostic engine, component library, repair cases
