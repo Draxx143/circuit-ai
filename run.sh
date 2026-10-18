@@ -21,14 +21,30 @@ if ! command -v python3 >/dev/null 2>&1; then
   printf 'Python 3 is required. Ubuntu 24.04: python3 --version\n' >&2
   exit 1
 fi
-python3 - <<'PY' || { printf 'Python 3.10 or newer is required.\n' >&2; exit 1; }
+# Prefer a widely-supported interpreter for the pinned wheels (3.10-3.13).
+# Python 3.14+ may not have prebuilt wheels for every pinned dependency yet.
+PYTHON_BIN=""
+for candidate in python3.12 python3.13 python3.11 python3.10 python3; do
+  if command -v "$candidate" >/dev/null 2>&1; then PYTHON_BIN="$candidate"; break; fi
+done
+"$PYTHON_BIN" - <<'PY' || { printf 'Python 3.10 or newer is required.\n' >&2; exit 1; }
 import sys
 if sys.version_info < (3, 10):
     raise SystemExit(1)
 PY
 
+# If an old .venv was created with a different interpreter (e.g. 3.14), rebuild it.
+if [[ -x "$VENV/bin/python" ]]; then
+  VENV_VER="$("$VENV/bin/python" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")' 2>/dev/null || echo none)"
+  WANT_VER="$("$PYTHON_BIN" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+  if [[ "$VENV_VER" != "$WANT_VER" ]]; then
+    printf 'Rebuilding .venv with %s (was Python %s)...\n' "$PYTHON_BIN" "$VENV_VER"
+    rm -rf "$VENV"
+  fi
+fi
+
 if [[ ! -x "$VENV/bin/python" ]]; then
-  if ! python3 -m venv "$VENV"; then
+  if ! "$PYTHON_BIN" -m venv "$VENV"; then
     printf 'Could not create .venv. On Ubuntu, install python3-venv only if missing:\n  sudo apt install python3-venv\n' >&2
     exit 1
   fi
