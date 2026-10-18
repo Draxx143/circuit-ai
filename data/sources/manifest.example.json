@@ -1,0 +1,14 @@
+{
+  "components": [
+    {
+      "part_number": "TPS5430",
+      "manufacturer": "Texas Instruments",
+      "category": "DC-DC regulator",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps5430.pdf",
+      "human_approved": false,
+      "validation_status": "needs_review",
+      "manual_verification_note": "ابتدا دیتاشیت کامل، گونه قطعه، جدول شرایط و شماره صفحه را توسط بازبین بررسی کنید.",
+      "reviewer": ""
+    }
+  ]
+}

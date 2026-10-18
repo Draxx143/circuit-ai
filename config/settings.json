@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "CIRCUIT AI",
+    "tagline": "Intelligent Electronics Diagnostics",
+    "locale": "fa-IR",
+    "default_theme": "dark"
+  },
+  "server": {
+    "default_host": "127.0.0.1",
+    "default_port": 8501
+  },
+  "security": {
+    "external_services_enabled": false,
+    "statistics_collection_enabled": false
+  },
+  "diagnostics": {
+    "confidence_percentages_enabled": false
+  }
+}

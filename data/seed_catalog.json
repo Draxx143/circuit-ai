@@ -1,0 +1,1942 @@
+{
+ "accessed_on": "2026-10-17",
+ "sources": [
+  {
+   "source_key": "ti_lm2596_ds_rev_g",
+   "title": "LM2596 SIMPLE SWITCHER Power Converter 150-kHz 3-A Step-Down Voltage Regulator",
+   "publisher": "Texas Instruments",
+   "document_type": "Official datasheet",
+   "url": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+   "document_version": "Rev. G, March 2023",
+   "accessed_on": "2026-10-17",
+   "status": "official_datasheet_reviewed",
+   "notes": "Official TI PDF opened and reviewed for device overview, pin functions, operating conditions and output conditions. Datasheet evidence is not laboratory verification."
+  },
+  {
+   "source_key": "ti_tps5430_ds_rev_l",
+   "title": "TPS543x 3A, Wide Input Range, Step-Down Converter",
+   "publisher": "Texas Instruments",
+   "document_type": "Official datasheet",
+   "url": "https://www.ti.com/lit/ds/symlink/tps5430.pdf",
+   "document_version": "Rev. L (PDF title at access)",
+   "accessed_on": "2026-10-17",
+   "status": "official_datasheet_reviewed",
+   "notes": "Official TI PDF opened and reviewed, including recommended operating conditions, absolute maximum ratings, pin functions and electrical characteristics. Not laboratory tested."
+  },
+  {
+   "source_key": "ti_drv8825_ds_rev_f",
+   "title": "DRV8825 Stepper Motor Controller IC",
+   "publisher": "Texas Instruments",
+   "document_type": "Official datasheet",
+   "url": "https://www.ti.com/lit/ds/symlink/drv8825.pdf",
+   "document_version": "Rev. F, July 2014",
+   "accessed_on": "2026-10-17",
+   "status": "official_datasheet_reviewed",
+   "notes": "Official TI PDF opened and reviewed for pin functions, recommended VM range and conditional output-current statement. Datasheet evidence is not laboratory verification."
+  },
+  {
+   "source_key": "nexperia_1n4148_ds_2004",
+   "title": "1N4148; 1N4448 High-speed diodes",
+   "publisher": "Nexperia (legacy NXP product data sheet)",
+   "document_type": "Official product datasheet",
+   "url": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+   "document_version": "Product data sheet, 2004-08-10",
+   "accessed_on": "2026-10-17",
+   "status": "official_datasheet_reviewed",
+   "notes": "Officially hosted PDF opened. It is an older product data sheet; Nexperia product page notes that production/customer support for the glass-diode family moved to Tak Cheong under license. Limits are stored as limiting/absolute values, not recommended operating conditions."
+  },
+  {
+   "source_key": "nexperia_1n4148_product_page",
+   "title": "1N4148 (High-speed diodes) product page",
+   "publisher": "Nexperia",
+   "document_type": "Official product page",
+   "url": "https://www.nexperia.com/product/1N4148",
+   "document_version": "Product page accessed 2026-10-17",
+   "accessed_on": "2026-10-17",
+   "status": "official_product_page_reviewed",
+   "notes": "Official product page opened; used only for the current-family manufacturing/support notice. Electrical values are sourced from the linked/hosted datasheet, not this notice."
+  },
+  {
+   "source_key": "infineon_irlz44n_ds_v01_01",
+   "title": "IRLZ44NPbF HEXFET Power MOSFET",
+   "publisher": "Infineon / International Rectifier",
+   "document_type": "Official datasheet",
+   "url": "https://www.infineon.com/dgdl/Infineon-IRLZ44N-DataSheet-v01_01-EN.pdf",
+   "document_version": "v01_01; datasheet dated 2003-11-11",
+   "accessed_on": "2026-10-17",
+   "status": "official_datasheet_reviewed",
+   "notes": "Officially hosted PDF opened and reviewed. Legacy document/version; current orderable variants and revisions must be checked before design use. Values retain original test conditions. Not laboratory tested."
+  },
+  {
+   "source_key": "ti_lm7805_ds",
+   "title": "LM78xx / LM7805 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/lm7805.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "st_ldo_ld1117",
+   "title": "LD1117 datasheet",
+   "publisher": "STMicroelectronics",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.st.com/resource/en/datasheet/ld1117.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_ne555_ds",
+   "title": "NE555 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/ne555.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_uln2003a_ds",
+   "title": "ULN2003A datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/uln2003a.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_lm317_ds",
+   "title": "LM317 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/lm317.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_lm358_ds",
+   "title": "LM358 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/lm358.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_tl431_ds",
+   "title": "TL431 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "onsemi_irf540n",
+   "title": "IRF540N product/datasheet",
+   "publisher": "onsemi",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.onsemi.com/products/discrete-power-modules/mosfets",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "microchip_atmega328p",
+   "title": "ATmega328P datasheet",
+   "publisher": "Microchip",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.microchip.com/en-us/product/atmega328p",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "st_stm32f103",
+   "title": "STM32F103 datasheet",
+   "publisher": "STMicroelectronics",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_74hc595_ds",
+   "title": "SN74HC595 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "vishay_ss34",
+   "title": "SS34 product page",
+   "publisher": "Vishay",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.vishay.com/en/product/88747/",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "toshiba_pc817",
+   "title": "PC817 product page",
+   "publisher": "Toshiba",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://toshiba.semicon-storage.com/ap-en/semiconductor/product/optoelectronics/detail.PC817XNNIP1B.html",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_lm393_ds",
+   "title": "LM393 datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/lm393.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  },
+  {
+   "source_key": "ti_cd4017",
+   "title": "CD4017B datasheet",
+   "publisher": "Texas Instruments",
+   "document_type": "datasheet (نیازمند بازبینی انسانی در این نسخه)",
+   "url": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf",
+   "document_version": null,
+   "accessed_on": "2026-10-18",
+   "status": "needs_review",
+   "notes": "در این نسخه فقط پیوند رسمی ثبت شده؛ مقادیر عددی این رکوردها تا بازبینی مستقیم دیتاشیت، needs_review هستند و موتور از آن‌ها حد عددی استخراج نمی‌کند."
+  }
+ ],
+ "components": [
+  {
+   "part_number": "LM2596",
+   "manufacturer": "Texas Instruments",
+   "category": "DC-DC رگولاتور",
+   "component_type": "Buck switching regulator family",
+   "function_text": "رگولاتور سوئیچینگ کاهنده (Buck) با کلید قدرت داخلی؛ نسخه‌های خروجی ثابت و قابل تنظیم در خانواده دیتاشیت آمده‌اند.",
+   "common_applications": "تبدیل DC-DC در مدارهایی که طراحی، سلف، دیود و خازن‌های پیرامونی با دیتاشیت تطبیق داده شده باشند.",
+   "specs": {
+    "switching_frequency_hz": {
+     "typical": 150000,
+     "unit": "Hz",
+     "conditions": "فرکانس نوسان‌ساز داخلی اسمی"
+    },
+    "maximum_output_current_a": {
+     "value": 3,
+     "unit": "A",
+     "conditions": "ظرفیت خانواده طبق عنوان/شرح دیتاشیت؛ توان حرارتی، ورودی/خروجی و قطعات پیرامونی باید در طراحی واقعی بررسی شوند"
+    },
+    "output_versions_v": [
+     3.3,
+     5,
+     12,
+     "adjustable"
+    ],
+    "adjustable_output_range_v": {
+     "min": 1.2,
+     "max": 37,
+     "conditions": "نسخه قابل تنظیم؛ مقادیر عملکرد به شرایط ورودی، بار و شبکه خارجی وابسته‌اند"
+    }
+   },
+   "recommended_operating": {
+    "input_voltage_v": {
+     "min": 4.5,
+     "max": 40,
+     "conditions": "Operating Conditions دیتاشیت؛ برای نسخه/مدار واقعی و حداکثر تنش گذرا، دیتاشیت و شماتیک را تطبیق دهید"
+    }
+   },
+   "absolute_max": {
+    "input_voltage_v": {
+     "min": null,
+     "max": 45,
+     "unit": "V",
+     "conditions": "حداکثر مقدار مطلق؛ حد کار عادی نیست"
+    },
+    "junction_temperature_c": {
+     "min": null,
+     "max": 150,
+     "unit": "°C",
+     "conditions": "حداکثر مقدار مطلق"
+    }
+   },
+   "package": "TO-220 (5 pins); TO-263 (5 pins)",
+   "pin_count": 5,
+   "operating_temperature": "-40 تا 125 °C (Operating Conditions دیتاشیت)",
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+   "datasheet_section": "Sections 1, 6, 7.1, 7.3, 7.6; pin functions and recommended operating conditions",
+   "source_key": "ti_lm2596_ds_rev_g",
+   "validation_status": "official_datasheet_reviewed",
+   "last_reviewed": "2026-10-17",
+   "notes": "رکورد خانواده است، نه یک کد سفارش/نسخه پکیج خاص. مقادیر 3 A و ولتاژهای خروجی، مشخصه طراحی عمومی نیستند و باید با شرایط دیتاشیت و مدار کاربردی خوانده شوند. حداکثر مطلق از محدوده کاری جداست."
+  },
+  {
+   "part_number": "TPS5430",
+   "manufacturer": "Texas Instruments",
+   "category": "DC-DC رگولاتور",
+   "component_type": "Buck PWM converter with integrated high-side MOSFET",
+   "function_text": "مبدل کاهنده PWM با MOSFET داخلی، ورودی Enable فعال-بالا و بازخورد VSENSE.",
+   "common_applications": "منابع تغذیه DC-DC؛ دیتاشیت کاربردهای صنعتی/توزیع 12 و 24 ولت را فهرست می‌کند. این موضوع جایگزین طراحی و بررسی مدار واقعی نیست.",
+   "specs": {
+    "maximum_continuous_output_current_a": {
+     "value": 3,
+     "unit": "A",
+     "conditions": "مشخصه محصول؛ عملکرد حرارتی به PCB، پد حرارتی، ورودی و طراحی وابسته است"
+    },
+    "switching_frequency_hz": {
+     "typical": 500000,
+     "unit": "Hz",
+     "conditions": "فرکانس اسمی؛ در دیتاشیت محدوده مشخصه نیز آمده است"
+    },
+    "feedback_reference_v": {
+     "typical": 1.221,
+     "unit": "V",
+     "conditions": "Typical/nominal; مرجع تشخیص ولتاژ خروجی؛ مقدار یک برد را بدون شماتیک فرض نکنید"
+    },
+    "enable_threshold_v": {
+     "falling_max": 0.5,
+     "rising_min": 1.3,
+     "unit": "V",
+     "conditions": "آستانه‌های ENA طبق جدول مشخصات الکتریکی"
+    }
+   },
+   "recommended_operating": {
+    "input_voltage_v": {
+     "min": 5.5,
+     "max": 36,
+     "conditions": "TPS5430، Recommended Operating Conditions؛ برای TPS5431 متفاوت است"
+    },
+    "junction_temperature_c": {
+     "min": -40,
+     "max": 125,
+     "conditions": "Recommended Operating Conditions"
+    }
+   },
+   "absolute_max": {
+    "input_voltage_v": {
+     "min": -0.3,
+     "max": 40,
+     "unit": "V",
+     "conditions": "VIN-to-GND absolute maximum; not a recommended operating range"
+    },
+    "ena_voltage_v": {
+     "min": -0.3,
+     "max": 7,
+     "unit": "V",
+     "conditions": "Absolute maximum"
+    },
+    "junction_temperature_c": {
+     "min": -40,
+     "max": 150,
+     "unit": "°C",
+     "conditions": "Absolute maximum table"
+    }
+   },
+   "package": "DDA HSOIC-8 with exposed thermal pad",
+   "pin_count": 8,
+   "operating_temperature": "-40 تا 125 °C (Recommended Operating Conditions)",
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps5430.pdf",
+   "datasheet_section": "Sections 1, 4, 5.1, 5.3, 5.5; pin functions and recommended operating conditions",
+   "source_key": "ti_tps5430_ds_rev_l",
+   "validation_status": "official_datasheet_reviewed",
+   "last_reviewed": "2026-10-17",
+   "notes": "مقدار 40 V در Absolute Maximum Ratings است و به‌هیچ‌وجه جایگزین بازه کاری توصیه‌شده 5.5–36 V نیست. ثبت مشخصه‌ها از روی Rev. L انجام شده است."
+  },
+  {
+   "part_number": "DRV8825",
+   "manufacturer": "Texas Instruments",
+   "category": "درایور موتور",
+   "component_type": "Stepper motor driver with dual H-bridges and microstepping indexer",
+   "function_text": "درایور موتور پله‌ای دوقطبی شامل دو پل H، کنترل جریان PWM و ورودی‌های STEP/DIR.",
+   "common_applications": "کنترل موتور پله‌ای دوقطبی و تجهیزات اتوماسیون؛ جریان واقعی مجاز به خنک‌کاری، PCB و تنظیم جریان وابسته است.",
+   "specs": {
+    "maximum_drive_current_a": {
+     "value": 2.5,
+     "unit": "A",
+     "conditions": "دیتاشیت: تا 2.5 A با هیت‌سینک مناسب، در 24 V و 25 °C؛ مقدار تضمین‌شده برای هر برد نیست"
+    },
+    "microstepping": {
+     "maximum_fraction": "1/32",
+     "conditions": "وابسته به حالت پایه‌های MODE0–MODE2"
+    },
+    "logic_supply_output_v": {
+     "typical": 3.3,
+     "unit": "V",
+     "conditions": "V3P3OUT طبق دیتاشیت؛ بار مجاز خروجی حداکثر 1 mA"
+    }
+   },
+   "recommended_operating": {
+    "motor_supply_vm_v": {
+     "min": 8.2,
+     "max": 45,
+     "conditions": "Recommended Operating Conditions؛ همه پایه‌های VM باید به یک تغذیه متصل شوند"
+    },
+    "vref_v": {
+     "min": 1,
+     "max": 3.5,
+     "conditions": "Recommended Operating Conditions؛ دقت پایین‌تر زیر 1 V"
+    }
+   },
+   "absolute_max": {
+    "motor_supply_vm_v": {
+     "min": -0.3,
+     "max": 47,
+     "unit": "V",
+     "conditions": "Absolute maximum; not a normal operating range"
+    },
+    "digital_pin_v": {
+     "min": -0.5,
+     "max": 7,
+     "unit": "V",
+     "conditions": "Absolute maximum"
+    },
+    "junction_temperature_c": {
+     "min": -40,
+     "max": 150,
+     "unit": "°C",
+     "conditions": "Absolute maximum"
+    }
+   },
+   "package": "HTSSOP-28 (PWP), exposed thermal pad",
+   "pin_count": 28,
+   "operating_temperature": "-40 تا 85 °C ambient for listed electrical characteristics; junction limits differ",
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/drv8825.pdf",
+   "datasheet_section": "Sections 1, 6, 7.1, 7.3; pin functions and power-supply recommendations",
+   "source_key": "ti_drv8825_ds_rev_f",
+   "validation_status": "official_datasheet_reviewed",
+   "last_reviewed": "2026-10-17",
+   "notes": "جریان 2.5 A فقط همراه شرایط درج‌شده قابل تفسیر است؛ محدودیت توان/حرارت باید رعایت شود. مقدار Absolute Maximum برابر 47 V حد کار عادی نیست."
+  },
+  {
+   "part_number": "1N4148",
+   "manufacturer": "Nexperia (legacy NXP datasheet; family production/support notice applies)",
+   "category": "دیود",
+   "component_type": "High-speed switching diode",
+   "function_text": "دیود سیگنال سوئیچینگ سریع؛ دیتاشیت قدیمی برای خانواده 1N4148/1N4448.",
+   "common_applications": "سوئیچینگ سیگنال. تایید اصالت قطعه/تولیدکننده و نسخه دیتاشیت برای قطعه واقعی لازم است.",
+   "specs": {
+    "forward_voltage_max_v": {
+     "value": 1.0,
+     "unit": "V",
+     "conditions": "1N4148 at IF=10 mA, TJ=25 °C in the product data sheet"
+    },
+    "reverse_recovery_time_max_ns": {
+     "value": 4,
+     "unit": "ns",
+     "conditions": "شرایط آزمون مشخص‌شده در جدول Electrical Characteristics"
+    },
+    "package_description": "Hermetically sealed axial glass package, SOD27 (DO-35), 2 leads"
+   },
+   "recommended_operating": {},
+   "absolute_max": {
+    "continuous_reverse_voltage_v": {
+     "min": null,
+     "max": 100,
+     "unit": "V",
+     "conditions": "Limiting value"
+    },
+    "continuous_forward_current_a": {
+     "min": null,
+     "max": 0.2,
+     "unit": "A",
+     "conditions": "Limiting value; derating depends on ambient temperature and mounting"
+    },
+    "repetitive_peak_forward_current_a": {
+     "min": null,
+     "max": 0.45,
+     "unit": "A",
+     "conditions": "Limiting value; not continuous current"
+    },
+    "total_power_dissipation_w": {
+     "min": null,
+     "max": 0.5,
+     "unit": "W",
+     "conditions": "Tamb=25 °C, FR4 and lead length 10 mm as in note"
+    }
+   },
+   "package": "SOD27 / DO-35, axial glass, 2 leads",
+   "pin_count": 2,
+   "operating_temperature": "Junction maximum 200 °C in the cited legacy datasheet; not a board operating target",
+   "datasheet_url": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+   "datasheet_section": "Pages 1–3: product profile, limiting values and electrical characteristics",
+   "source_key": "nexperia_1n4148_ds_2004",
+   "validation_status": "official_datasheet_reviewed",
+   "last_reviewed": "2026-10-17",
+   "notes": "فقط مشخصه‌های مستقیم از دیتاشیت قدیمی ثبت شده‌اند. 100 V و 200 mA مقادیر limiting/absolute هستند، نه توصیه برای طراحی. صفحه رسمی Nexperia درباره انتقال تولید/پشتیبانی خانواده شیشه‌ای به Tak Cheong اطلاع می‌دهد؛ سازنده/منبع قطعه فیزیکی باید با مارکینگ و تأمین‌کننده تطبیق داده شود."
+  },
+  {
+   "part_number": "IRLZ44N",
+   "manufacturer": "Infineon / International Rectifier (legacy datasheet variant IRLZ44NPbF)",
+   "category": "ماسفت",
+   "component_type": "N-channel logic-level power MOSFET family",
+   "function_text": "ماسفت قدرت کانال N؛ دیتاشیت بررسی‌شده مربوط به گونه IRLZ44NPbF و نسخه قدیمی است.",
+   "common_applications": "کلیدزنی توان DC؛ انتخاب گیت‌درایو، ناحیه امن، دفع حرارت و شرایط پالس باید از دیتاشیت دقیق همان کد قطعه بررسی شود.",
+   "specs": {
+    "rds_on_max_ohm": {
+     "value": 0.022,
+     "unit": "ohm",
+     "conditions": "VGS=10 V, ID=25 A, TJ=25 °C; test condition matters"
+    },
+    "rds_on_max_at_5v_ohm": {
+     "value": 0.025,
+     "unit": "ohm",
+     "conditions": "VGS=5 V, ID=25 A, TJ=25 °C; test condition matters"
+    },
+    "gate_threshold_v": {
+     "min": 1.0,
+     "max": 2.0,
+     "conditions": "At VDS=VGS and ID=250 µA; threshold is not a fully-on gate voltage"
+    }
+   },
+   "recommended_operating": {},
+   "absolute_max": {
+    "drain_source_voltage_v": {
+     "min": null,
+     "max": 55,
+     "unit": "V",
+     "conditions": "Breakdown/absolute rating; design margin required"
+    },
+    "continuous_drain_current_a": {
+     "min": null,
+     "max": 47,
+     "unit": "A",
+     "conditions": "Only at TC=25 °C and VGS=10 V; not a board-level current guarantee"
+    },
+    "gate_source_voltage_v": {
+     "min": -16,
+     "max": 16,
+     "unit": "V",
+     "conditions": "Absolute maximum"
+    },
+    "power_dissipation_w": {
+     "min": null,
+     "max": 110,
+     "unit": "W",
+     "conditions": "At case temperature TC=25 °C; heatsinking conditions apply"
+    },
+    "junction_temperature_c": {
+     "min": -55,
+     "max": 175,
+     "unit": "°C",
+     "conditions": "Absolute/operating junction limit from cited legacy sheet"
+    }
+   },
+   "package": "TO-220",
+   "pin_count": 3,
+   "operating_temperature": "Junction limits in the cited legacy datasheet: -55 to 175 °C",
+   "datasheet_url": "https://www.infineon.com/dgdl/Infineon-IRLZ44N-DataSheet-v01_01-EN.pdf",
+   "datasheet_section": "Absolute Maximum Ratings; Electrical Characteristics; Thermal Resistance",
+   "source_key": "infineon_irlz44n_ds_v01_01",
+   "validation_status": "official_datasheet_reviewed",
+   "last_reviewed": "2026-10-17",
+   "notes": "شماره کامل روی بدنه و نسخه سازنده باید تطبیق داده شود. مقادیر جریان/توان فقط تحت شرایط دیتاشیت معتبرند. از VGS(th) برای تعیین ولتاژ روشن‌شدن کامل استفاده نشود. پین‌آوت در این رکورد عمداً ثبت نشده چون در این برداشت از سند به‌صورت مستقلاً بازبینی نشده است."
+  },
+  {
+   "part_number": "LM7805",
+   "manufacturer": "Texas Instruments",
+   "category": "رگولاتور خطی",
+   "component_type": "Linear regulator 5V",
+   "function_text": "رگولاتور خطی مثبت ثابت (خانواده LM78xx)",
+   "common_applications": "منابع تغذیه خطی بردهای کنترل",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "TO-220",
+   "pin_count": 3,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm7805.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_lm7805_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "AMS1117",
+   "manufacturer": "Advanced Monolithic Systems",
+   "category": "رگولاتور خطی",
+   "component_type": "LDO regulator",
+   "function_text": "رگولاتور کم‌افت (LDO) قابل تنظیم/ثابت بسته به نسخه",
+   "common_applications": "تغذیه 3.3V/5V مدارهای دیجیتال",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "SOT-223",
+   "pin_count": 3,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.st.com/resource/en/datasheet/ld1117.pdf",
+   "datasheet_section": "",
+   "source_key": "st_ldo_ld1117",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. نسخه و سازنده روی بدنه باید تطبیق داده شود؛ AMS1117 و LD1117 یکسان فرض نمی‌شوند."
+  },
+  {
+   "part_number": "LM317",
+   "manufacturer": "Texas Instruments",
+   "category": "رگولاتور خطی",
+   "component_type": "Adjustable linear regulator",
+   "function_text": "رگولاتور خطی قابل تنظیم با مقاومت‌های خارجی",
+   "common_applications": "منابع قابل تنظیم آزمایشگاهی/صنعتی",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "TO-220",
+   "pin_count": 3,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm317.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_lm317_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "NE555",
+   "manufacturer": "Texas Instruments",
+   "category": "آی‌سی تایمر",
+   "component_type": "Timer IC",
+   "function_text": "تایمر/اسیلاتور 555",
+   "common_applications": "تایمر، PWM ساده، تأخیر",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-8 / SOIC-8",
+   "pin_count": 8,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/ne555.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_ne555_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "ULN2003A",
+   "manufacturer": "Texas Instruments",
+   "category": "درایور آرایه‌ای",
+   "component_type": "Darlington array driver",
+   "function_text": "آرایه ۷ کاناله دارلینگتون برای رله/موتور پله‌ای کوچک",
+   "common_applications": "درایو رله و بارهای القایی",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-16 / SOIC-16",
+   "pin_count": 16,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/uln2003a.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_uln2003a_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "LM358",
+   "manufacturer": "Texas Instruments",
+   "category": "آپ‌امپ",
+   "component_type": "Dual op-amp",
+   "function_text": "دو آپ‌امپ عمومی",
+   "common_applications": "تقویت حسگر، مقایسه ساده",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-8 / SOIC-8",
+   "pin_count": 8,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm358.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_lm358_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "LM393",
+   "manufacturer": "Texas Instruments",
+   "category": "مقایسه‌گر",
+   "component_type": "Dual comparator",
+   "function_text": "دو مقایسه‌گر با خروجی کلکتور باز",
+   "common_applications": "تشخیص سطح، حفاظت",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-8 / SOIC-8",
+   "pin_count": 8,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm393.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_lm393_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "TL431",
+   "manufacturer": "Texas Instruments",
+   "category": "مرجع ولتاژ",
+   "component_type": "Adjustable shunt reference",
+   "function_text": "مرجع/رگولاتور شنت قابل تنظیم",
+   "common_applications": "فیدبک منابع سوئیچینگ با اپتوکوپلر",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "TO-92 / SOT-23",
+   "pin_count": 3,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_tl431_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. ترتیب پایه‌ها بسته به پکیج/سازنده متفاوت است؛ بدون دیتاشیت نسخه واقعی ثبت نشده است."
+  },
+  {
+   "part_number": "PC817",
+   "manufacturer": "Toshiba / سازندگان مختلف",
+   "category": "اپتوکوپلر",
+   "component_type": "Photocoupler",
+   "function_text": "اپتوکوپلر ترانزیستوری برای ایزولاسیون و فیدبک",
+   "common_applications": "فیدبک SMPS، ایزوله ورودی دیجیتال",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-4",
+   "pin_count": 4,
+   "operating_temperature": null,
+   "datasheet_url": "https://toshiba.semicon-storage.com/ap-en/semiconductor/product/optoelectronics/detail.PC817XNNIP1B.html",
+   "datasheet_section": "",
+   "source_key": "toshiba_pc817",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. رتبه CTR و سازنده دقیق باید از روی بدنه/دیتاشیت همان نسخه خوانده شود."
+  },
+  {
+   "part_number": "IRF540N",
+   "manufacturer": "onsemi / Infineon (نسخه‌ها متفاوت)",
+   "category": "ماسفت قدرت",
+   "component_type": "N-channel power MOSFET",
+   "function_text": "ماسفت قدرت کانال N",
+   "common_applications": "سوئیچ بار، درایور موتور",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "TO-220",
+   "pin_count": 3,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.onsemi.com/products/discrete-power-modules/mosfets",
+   "datasheet_section": "",
+   "source_key": "onsemi_irf540n",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. سازنده دقیق روی بدنه ملاک است؛ مشخصات بین سازندگان نسخه‌های هم‌نام می‌تواند فرق کند."
+  },
+  {
+   "part_number": "SS34",
+   "manufacturer": "Vishay / سازندگان مختلف",
+   "category": "دیود شاتکی",
+   "component_type": "Schottky rectifier",
+   "function_text": "دیود شاتکی قدرت سطح‌نصب",
+   "common_applications": "یکسوسازی خروجی SMPS",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "SMA (DO-214AC)",
+   "pin_count": 2,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.vishay.com/en/product/88747/",
+   "datasheet_section": "",
+   "source_key": "vishay_ss34",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "74HC595",
+   "manufacturer": "Texas Instruments",
+   "category": "رجیستر شیفت",
+   "component_type": "8-bit shift register",
+   "function_text": "رجیستر شیفت سریال به موازی با لچ خروجی",
+   "common_applications": "افزایش خروجی دیجیتال",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-16 / SOIC-16",
+   "pin_count": 16,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_74hc595_ds",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "CD4017B",
+   "manufacturer": "Texas Instruments",
+   "category": "شمارنده",
+   "component_type": "Decade counter",
+   "function_text": "شمارنده ده‌دهی با خروجی‌های رمزگشایی‌شده",
+   "common_applications": "توالی‌ساز، تقسیم فرکانس",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-16 / SOIC-16",
+   "pin_count": 16,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf",
+   "datasheet_section": "",
+   "source_key": "ti_cd4017",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد."
+  },
+  {
+   "part_number": "ATmega328P",
+   "manufacturer": "Microchip",
+   "category": "میکروکنترلر",
+   "component_type": "8-bit AVR MCU",
+   "function_text": "میکروکنترلر AVR با ADC و رابط‌های سریال",
+   "common_applications": "بردهای کنترل و آردوینو Uno",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "DIP-28 / TQFP-32",
+   "pin_count": 28,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.microchip.com/en-us/product/atmega328p",
+   "datasheet_section": "",
+   "source_key": "microchip_atmega328p",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. پین‌آوت کامل عمداً ثبت نشده؛ فقط با دیتاشیت همان پکیج استفاده شود."
+  },
+  {
+   "part_number": "STM32F103C8",
+   "manufacturer": "STMicroelectronics",
+   "category": "میکروکنترلر",
+   "component_type": "32-bit ARM Cortex-M3 MCU",
+   "function_text": "میکروکنترلر ARM با USB/CAN/ADC",
+   "common_applications": "بردهای کنترل صنعتی و Blue Pill",
+   "specs": {},
+   "recommended_operating": {},
+   "absolute_max": {},
+   "package": "LQFP-48",
+   "pin_count": 48,
+   "operating_temperature": null,
+   "datasheet_url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html",
+   "datasheet_section": "",
+   "source_key": "st_stm32f103",
+   "accessed_on": "2026-10-18",
+   "validation_status": "needs_review",
+   "last_reviewed": null,
+   "notes": "ثبت اولیه برای جست‌وجو و ارجاع به منبع رسمی؛ مشخصات عددی تا بازبینی مستقیم دیتاشیت نامشخص است و موتور از آن حد عددی نمی‌سازد. نمونه‌های تقلبی/remark‌شده در بازار رایج‌اند؛ اصالت و نسخه سیلیکون باید جداگانه بررسی شود."
+  }
+ ],
+ "pins": [
+  {
+   "part_number": "LM2596",
+   "pin_name": "VIN",
+   "pin_number": "1",
+   "function_text": "تغذیه ورودی مثبت رگولاتور؛ خازن بای‌پس مناسب نزدیک پایه لازم است.",
+   "electrical_role": "input",
+   "conditions": "مطابق طراحی دیتاشیت و شماتیک؛ بررسی ورودی هنگام روشن بودن فقط با رعایت ایمنی مدار.",
+   "source_key": "ti_lm2596_ds_rev_g"
+  },
+  {
+   "part_number": "LM2596",
+   "pin_name": "Output",
+   "pin_number": "2",
+   "function_text": "گره سوئیچ داخلی؛ سیگنال سوئیچینگ، نه خروجی DC تنظیم‌شده.",
+   "electrical_role": "switch_node",
+   "conditions": "گره پرنویز/سوئیچینگ؛ سطح مس و اندازه‌گیری تابع طراحی است.",
+   "source_key": "ti_lm2596_ds_rev_g"
+  },
+  {
+   "part_number": "LM2596",
+   "pin_name": "GND",
+   "pin_number": "3",
+   "function_text": "زمین مدار.",
+   "electrical_role": "ground",
+   "conditions": "مرجع دقیق مطابق شماتیک.",
+   "source_key": "ti_lm2596_ds_rev_g"
+  },
+  {
+   "part_number": "LM2596",
+   "pin_name": "Feedback",
+   "pin_number": "4",
+   "function_text": "حس‌کردن خروجی تنظیم‌شده برای حلقه فیدبک.",
+   "electrical_role": "input",
+   "conditions": "مقدار مورد انتظار وابسته به نسخه و تقسیم مقاومتی است.",
+   "source_key": "ti_lm2596_ds_rev_g"
+  },
+  {
+   "part_number": "LM2596",
+   "pin_name": "ON/OFF",
+   "pin_number": "5",
+   "function_text": "کنترل خاموش/روشن رگولاتور.",
+   "electrical_role": "input",
+   "conditions": "آستانه و اتصال مطابق دیتاشیت و مدار.",
+   "source_key": "ti_lm2596_ds_rev_g"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "BOOT",
+   "pin_number": "1",
+   "function_text": "خازن بوست درایور گیت MOSFET سمت بالا.",
+   "electrical_role": "bootstrap",
+   "conditions": "خازن 0.01 µF کم ESR بین BOOT و PH طبق دیتاشیت.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "VSENSE",
+   "pin_number": "4",
+   "function_text": "ورودی فیدبک از تقسیم مقاومتی خروجی.",
+   "electrical_role": "input",
+   "conditions": "ولتاژ هدف وابسته به مقدارهای مدار واقعی.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "ENA",
+   "pin_number": "5",
+   "function_text": "فعال‌سازی؛ آستانه روشن‌شدن طبق جدول دیتاشیت.",
+   "electrical_role": "input",
+   "conditions": "زیر 0.5 V توقف سوئیچینگ؛ بالای 1.3 V آغاز به کار طبق پین‌فانکشن/شرایط دیتاشیت.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "GND",
+   "pin_number": "6",
+   "function_text": "زمین؛ باید به پد حرارتی نمایان متصل شود.",
+   "electrical_role": "ground",
+   "conditions": "DDA package.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "VIN",
+   "pin_number": "7",
+   "function_text": "تغذیه ورودی؛ خازن بای‌پس نزدیک پایه توصیه شده است.",
+   "electrical_role": "input_power",
+   "conditions": "بازه کار TPS5430: 5.5 تا 36 V؛ اندازه‌گیری در همین پایه و نسبت به زمین صحیح.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "TPS5430",
+   "pin_name": "PH",
+   "pin_number": "8",
+   "function_text": "گره سوئیچ MOSFET داخلی به سلف و دیود خارجی.",
+   "electrical_role": "switch_node",
+   "conditions": "گره سوئیچینگ؛ اندازه‌گیری مناسب به ابزار/پروب و زمین مرجع نیاز دارد.",
+   "source_key": "ti_tps5430_ds_rev_l"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "VMA",
+   "pin_number": "4",
+   "function_text": "تغذیه پل H کانال A.",
+   "electrical_role": "motor_supply",
+   "conditions": "همه پایه‌های VM به یک منبع متصل شوند؛ 8.2 تا 45 V بازه کاری توصیه‌شده خانواده.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "VMB",
+   "pin_number": "11",
+   "function_text": "تغذیه پل H کانال B.",
+   "electrical_role": "motor_supply",
+   "conditions": "همه پایه‌های VM به یک منبع متصل شوند.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "GND",
+   "pin_number": "14, 28",
+   "function_text": "زمین قطعه.",
+   "electrical_role": "ground",
+   "conditions": "پد حرارتی نیز مطابق طراحی به زمین متصل می‌شود.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "nRESET",
+   "pin_number": "16",
+   "function_text": "ریست فعال-پایین؛ مقداردهی اولیه indexer و غیرفعال‌کردن خروجی‌های پل H.",
+   "electrical_role": "input",
+   "conditions": "سطح منطقی و زمان‌بندی باید از شماتیک و دیتاشیت ارزیابی شود.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "nSLEEP",
+   "pin_number": "17",
+   "function_text": "ورودی حالت خواب؛ سطح پایین حالت کم‌مصرف را فعال می‌کند.",
+   "electrical_role": "input",
+   "conditions": "برای پذیرش فرمان STEP زمان بیدارشدن دیتاشیت رعایت شود.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "nFAULT",
+   "pin_number": "18",
+   "function_text": "خروجی open-drain اعلام خطا؛ پایین در وضعیت خطا.",
+   "electrical_role": "open_drain_output",
+   "conditions": "علت خطا باید از شرایط حفاظت/دیتاشیت تفکیک شود.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "nENBL",
+   "pin_number": "21",
+   "function_text": "فعال‌سازی خروجی‌ها؛ سطح بالا خروجی و indexer را غیرفعال می‌کند.",
+   "electrical_role": "input",
+   "conditions": "قطبیت active-low طبق دیتاشیت.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "DRV8825",
+   "pin_name": "STEP",
+   "pin_number": "22",
+   "function_text": "لبه بالارونده، indexer را یک گام جابه‌جا می‌کند.",
+   "electrical_role": "input",
+   "conditions": "عرض پالس/زمان‌بندی طبق بخش Timing Requirements.",
+   "source_key": "ti_drv8825_ds_rev_f"
+  },
+  {
+   "part_number": "LM7805",
+   "pin_name": "IN",
+   "pin_number": "1",
+   "function_text": "ورودی رگولاتور (TO-220، نمای روبه‌رو)",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM7805",
+   "pin_name": "GND",
+   "pin_number": "2",
+   "function_text": "زمین",
+   "electrical_role": "ground",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM7805",
+   "pin_name": "OUT",
+   "pin_number": "3",
+   "function_text": "خروجی تنظیم‌شده",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM317",
+   "pin_name": "ADJ",
+   "pin_number": "1",
+   "function_text": "پایه تنظیم با شبکه مقاومتی",
+   "electrical_role": "adjust",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM317",
+   "pin_name": "VOUT",
+   "pin_number": "2",
+   "function_text": "خروجی (در TO-220 بدنه فلزی هم به خروجی متصل است)",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM317",
+   "pin_name": "VIN",
+   "pin_number": "3",
+   "function_text": "ورودی",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "GND",
+   "pin_number": "1",
+   "function_text": "زمین",
+   "electrical_role": "ground",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "TRIG",
+   "pin_number": "2",
+   "function_text": "تریگر (شروع زمان‌بندی)",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "OUT",
+   "pin_number": "3",
+   "function_text": "خروجی",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "RESET",
+   "pin_number": "4",
+   "function_text": "ریست فعال-پایین",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "CONT",
+   "pin_number": "5",
+   "function_text": "ولتاژ کنترل",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "THRES",
+   "pin_number": "6",
+   "function_text": "آستانه",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "DISCH",
+   "pin_number": "7",
+   "function_text": "تخلیه خازن زمان‌بندی",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "NE555",
+   "pin_name": "VCC",
+   "pin_number": "8",
+   "function_text": "تغذیه مثبت",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "GND",
+   "pin_number": "8",
+   "function_text": "زمین",
+   "electrical_role": "ground",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "COM",
+   "pin_number": "9",
+   "function_text": "سر مشترک دیودهای هرزگرد داخلی",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN1",
+   "pin_number": "1",
+   "function_text": "ورودی کانال 1",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN2",
+   "pin_number": "2",
+   "function_text": "ورودی کانال 2",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN3",
+   "pin_number": "3",
+   "function_text": "ورودی کانال 3",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN4",
+   "pin_number": "4",
+   "function_text": "ورودی کانال 4",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN5",
+   "pin_number": "5",
+   "function_text": "ورودی کانال 5",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN6",
+   "pin_number": "6",
+   "function_text": "ورودی کانال 6",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "IN7",
+   "pin_number": "7",
+   "function_text": "ورودی کانال 7",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT1",
+   "pin_number": "16",
+   "function_text": "خروجی کلکتورباز کانال 1",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT2",
+   "pin_number": "15",
+   "function_text": "خروجی کلکتورباز کانال 2",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT3",
+   "pin_number": "14",
+   "function_text": "خروجی کلکتورباز کانال 3",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT4",
+   "pin_number": "13",
+   "function_text": "خروجی کلکتورباز کانال 4",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT5",
+   "pin_number": "12",
+   "function_text": "خروجی کلکتورباز کانال 5",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT6",
+   "pin_number": "11",
+   "function_text": "خروجی کلکتورباز کانال 6",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "ULN2003A",
+   "pin_name": "OUT7",
+   "pin_number": "10",
+   "function_text": "خروجی کلکتورباز کانال 7",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "OUT A",
+   "pin_number": "1",
+   "function_text": "خروجی آپ‌امپ A",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "IN A-",
+   "pin_number": "2",
+   "function_text": "ورودی معکوس A",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "IN A+",
+   "pin_number": "3",
+   "function_text": "ورودی غیرمعکوس A",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "VEE/GND",
+   "pin_number": "4",
+   "function_text": "تغذیه منفی/زمین",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "IN B+",
+   "pin_number": "5",
+   "function_text": "ورودی غیرمعکوس B",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "IN B-",
+   "pin_number": "6",
+   "function_text": "ورودی معکوس B",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "OUT B",
+   "pin_number": "7",
+   "function_text": "خروجی آپ‌امپ B",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM358",
+   "pin_name": "VCC",
+   "pin_number": "8",
+   "function_text": "تغذیه مثبت",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM393",
+   "pin_name": "VCC",
+   "pin_number": "8",
+   "function_text": "تغذیه مثبت",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "LM393",
+   "pin_name": "GND",
+   "pin_number": "4",
+   "function_text": "زمین",
+   "electrical_role": "ground",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "IRF540N",
+   "pin_name": "G",
+   "pin_number": "1",
+   "function_text": "گیت",
+   "electrical_role": "gate",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "IRF540N",
+   "pin_name": "D",
+   "pin_number": "2",
+   "function_text": "درین (بدنه فلزی TO-220 نیز درین است)",
+   "electrical_role": "drain",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "IRF540N",
+   "pin_name": "S",
+   "pin_number": "3",
+   "function_text": "سورس",
+   "electrical_role": "source",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "VCC",
+   "pin_number": "16",
+   "function_text": "تغذیه مثبت",
+   "electrical_role": "supply",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "GND",
+   "pin_number": "8",
+   "function_text": "زمین",
+   "electrical_role": "ground",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "SER",
+   "pin_number": "14",
+   "function_text": "ورودی داده سریال",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "SRCLK",
+   "pin_number": "11",
+   "function_text": "کلاک رجیستر شیفت",
+   "electrical_role": "clock",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "RCLK",
+   "pin_number": "12",
+   "function_text": "کلاک لچ خروجی",
+   "electrical_role": "clock",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "OE",
+   "pin_number": "13",
+   "function_text": "فعال‌سازی خروجی فعال-پایین",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "74HC595",
+   "pin_name": "SRCLR",
+   "pin_number": "10",
+   "function_text": "پاک‌کردن رجیستر فعال-پایین",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "PC817",
+   "pin_name": "Anode",
+   "pin_number": "1",
+   "function_text": "آند LED ورودی",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "PC817",
+   "pin_name": "Cathode",
+   "pin_number": "2",
+   "function_text": "کاتد LED ورودی",
+   "electrical_role": "input",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "PC817",
+   "pin_name": "Emitter",
+   "pin_number": "3",
+   "function_text": "امیتر ترانزیستور خروجی",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  },
+  {
+   "part_number": "PC817",
+   "pin_name": "Collector",
+   "pin_number": "4",
+   "function_text": "کلکتور ترانزیستور خروجی",
+   "electrical_role": "output",
+   "conditions": "فقط برای پکیج ذکرشده؛ پیش از اندازه‌گیری با دیتاشیت نسخه دقیق تطبیق شود.",
+   "source_key": null
+  }
+ ],
+ "topologies": [
+  {
+   "topology_code": "TI_LM2596_BUCK_REFERENCE",
+   "title": "نمونه مبدل Buck مبتنی بر LM2596 (شماتیک مرجع سازنده)",
+   "category": "DC-DC Buck",
+   "description": "ساختار مرجع دیتاشیت شامل رگولاتور، دیود هرزگرد، سلف، خازن‌های ورودی/خروجی و شبکه فیدبک متناسب با نسخه قطعه است.",
+   "expected_behavior": "خروجی DC تنظیم‌شده فقط در شرایط طراحی و بار تعیین‌شده در دیتاشیت/شماتیک انتظار می‌رود؛ نقاط سوئیچینگ شکل موج دارند.",
+   "failure_modes": [
+    "تغذیه ورودی/بای‌پس نامناسب",
+    "مسیر سوئیچینگ یا قطعات بیرونی نامناسب",
+    "شبکه فیدبک یا بار خارج از طراحی"
+   ],
+   "measurement_points": [
+    "VIN نسبت به GND",
+    "Feedback نسبت به GND",
+    "خروجی پس از فیلتر مطابق شماتیک",
+    "گره سوئیچ فقط با ابزار و روش مناسب"
+   ],
+   "diagnostic_limits": "شماتیک نمونه مقدار عمومی برای هر برد نیست. مقادیر سلف، دیود، خازن، زمین مرجع و ولتاژ هدف باید از مدار واقعی استخراج شوند. اندازه‌گیری زنده می‌تواند خطرناک باشد.",
+   "source_key": "ti_lm2596_ds_rev_g",
+   "validation_status": "official_datasheet_reviewed"
+  },
+  {
+   "topology_code": "TI_TPS5430_BUCK_REFERENCE",
+   "title": "نمونه مبدل Buck مبتنی بر TPS5430 (شماتیک مرجع سازنده)",
+   "category": "DC-DC Buck",
+   "description": "مبدل PWM کاهنده با MOSFET داخلی؛ اجزای بیرونی شامل خازن بای‌پس، خازن BOOT، گره PH، سلف، دیود و تقسیم مقاومتی فیدبک است.",
+   "expected_behavior": "شرایط درست کارکرد باید از نسخه TPS5430 و مقادیر طراحی واقعی خوانده شود؛ حد VIN توصیه‌شده خانواده 5.5 تا 36 V است.",
+   "failure_modes": [
+    "ورودی/ENA خارج از محدوده یا وضعیت نامناسب",
+    "اشکال فیدبک/شبکه خارجی",
+    "بار بیش از ظرفیت حرارتی طراحی"
+   ],
+   "measurement_points": [
+    "VIN نسبت به GND",
+    "ENA نسبت به GND",
+    "VSENSE نسبت به GND",
+    "خروجی پس از فیلتر طبق شماتیک",
+    "PH با پروب مناسب"
+   ],
+   "diagnostic_limits": "مقادیر نمونه دیتاشیت را به برد ناشناس تعمیم ندهید. پد حرارتی و شرایط PCB بر عملکرد حرارتی اثر دارند.",
+   "source_key": "ti_tps5430_ds_rev_l",
+   "validation_status": "official_datasheet_reviewed"
+  },
+  {
+   "topology_code": "TI_DRV8825_STEPPER_HBRIDGE",
+   "title": "درایور موتور پله‌ای دوقطبی DRV8825 با دو پل H",
+   "category": "Motor driver / H-bridge",
+   "description": "دو پل H ماسفتی داخلی، تنظیم جریان PWM، ورودی STEP/DIR، پایه‌های حالت خواب/ریست/فعال‌سازی و خروجی nFAULT.",
+   "expected_behavior": "تغذیه VM در بازه کاری دیتاشیت، توالی منطقی و زمان‌بندی مناسب و تنظیم جریان مطابق مقاومت حس و ولتاژ مرجع لازم است.",
+   "failure_modes": [
+    "VM خارج از محدوده توصیه‌شده",
+    "nSLEEP/nRESET/nENBL در وضعیت نامناسب",
+    "حفاظت حرارتی/جریان",
+    "موتور/سیم‌کشی/حس جریان نامتناسب"
+   ],
+   "measurement_points": [
+    "VMA/VMB نسبت به GND",
+    "nSLEEP, nRESET, nENBL",
+    "STEP/DIR",
+    "nFAULT",
+    "ISENA/ISENB فقط با آگاهی از مدار"
+   ],
+   "diagnostic_limits": "جریان 2.5 A فقط با شرایط حرارتی/تغذیه ذکرشده قابل تفسیر است؛ ولتاژ یا جریان را از روی نام برد حدس نزنید.",
+   "source_key": "ti_drv8825_ds_rev_f",
+   "validation_status": "official_datasheet_reviewed"
+  }
+ ],
+ "failure_modes": [
+  {
+   "failure_code": "TPS5430_VIN_OUTSIDE_RECOMMENDED",
+   "title": "TPS5430: ورودی VIN خارج از محدوده کاری توصیه‌شده",
+   "failure_type": "operating_condition_not_component_verdict",
+   "summary": "اگر قطعه دقیقاً TPS5430 باشد و ولتاژ اندازه‌گیری‌شده در پایه VIN نسبت به GND زیر 5.5 V یا بالاتر از 36 V باشد، ورودی خارج از Recommended Operating Conditions دیتاشیت است. این موضوع به‌تنهایی خرابی قطعه را ثابت نمی‌کند.",
+   "symptom_codes": [
+    "no_power",
+    "no_output",
+    "wrong_voltage",
+    "resets"
+   ],
+   "causes": [
+    "منبع ورودی یا مسیر/اتصال ورودی",
+    "اندازه‌گیری در نقطه یا مرجع اشتباه",
+    "نام‌گذاری/مدل قطعه یا شماتیک اشتباه"
+   ],
+   "evidence": {
+    "source_fact": "Recommended input range for TPS5430: 5.5–36 V; datasheet also separates absolute maximum ratings."
+   },
+   "limitations": "بررسی تنها پس از تطبیق شماره قطعه، پایه، زمین مرجع، وضعیت بار و شرایط اندازه‌گیری معتبر است. محدوده مطلق مجاز با محدوده کاری یکی نیست.",
+   "source_key": "ti_tps5430_ds_rev_l",
+   "validation_status": "official_datasheet_reviewed"
+  },
+  {
+   "failure_code": "LM2596_VIN_OUTSIDE_RECOMMENDED",
+   "title": "LM2596: ورودی VIN خارج از Operating Conditions",
+   "failure_type": "operating_condition_not_component_verdict",
+   "summary": "اگر مدل/نسخه قطعه و نقطه اندازه‌گیری تطبیق داشته باشند، VIN خارج از بازه Operating Conditions دیتاشیت (4.5–40 V) به معنی تضمین‌نشدن عملکرد است؛ به معنی تشخیص قطعی خرابی نیست.",
+   "symptom_codes": [
+    "no_power",
+    "no_output",
+    "wrong_voltage"
+   ],
+   "causes": [
+    "منبع یا مسیر تغذیه",
+    "شرایط گذرا/بار",
+    "نقطه اندازه‌گیری یا مدل قطعه اشتباه"
+   ],
+   "evidence": {
+    "source_fact": "TI datasheet section 7.3 lists supply voltage 4.5–40 V; absolute maximum is a separate rating."
+   },
+   "limitations": "خانواده LM2596 شامل نسخه‌های مختلف است. این بررسی جایگزین شناسایی کد کامل قطعه و مدار واقعی نیست.",
+   "source_key": "ti_lm2596_ds_rev_g",
+   "validation_status": "official_datasheet_reviewed"
+  },
+  {
+   "failure_code": "DRV8825_VM_OUTSIDE_RECOMMENDED",
+   "title": "DRV8825: تغذیه VM خارج از محدوده کاری توصیه‌شده",
+   "failure_type": "operating_condition_not_component_verdict",
+   "summary": "برای قطعه دقیق DRV8825، دیتاشیت بازه کاری تغذیه موتور VM را 8.2–45 V می‌داند. اندازه‌گیری خارج از این بازه نشانه بررسی تغذیه/نقطه اندازه‌گیری است و خرابی آی‌سی را اثبات نمی‌کند.",
+   "symptom_codes": [
+    "motor_driver_fault",
+    "no_power",
+    "no_output"
+   ],
+   "causes": [
+    "منبع VM یا افت مسیر",
+    "اتصال/مرجع زمین",
+    "اندازه‌گیری یا شناسایی قطعه نامطمئن"
+   ],
+   "evidence": {
+    "source_fact": "TI datasheet section 7.3: recommended motor supply range 8.2–45 V; all VM pins should share supply."
+   },
+   "limitations": "محدوده 47 V در Absolute Maximum Ratings حد کار عادی نیست؛ جریان خروجی نیز به دفع حرارت و طراحی وابسته است.",
+   "source_key": "ti_drv8825_ds_rev_f",
+   "validation_status": "official_datasheet_reviewed"
+  },
+  {
+   "failure_code": "INPUT_PROTECTION_OPEN",
+   "title": "قطع مسیر ورودی (فیوز/حفاظت/اتصال) به‌عنوان فرضیه مسیر بررسی",
+   "failure_type": "hypothesis_path",
+   "summary": "وقتی در ورودی برق‌دار برد ولتاژ صفر ثبت می‌شود، منبع، فیوز، حفاظت ورودی و اتصال‌ها قبل از هر قطعه دیگری بررسی می‌شوند؛ این رکورد خرابی قطعه مشخصی را ادعا نمی‌کند.",
+   "symptom_codes": [
+    "no_power",
+    "no_output"
+   ],
+   "causes": [
+    "منبع بیرونی غایب/در حفاظت",
+    "فیوز یا حفاظت ورودی قطع",
+    "اتصال/ترک مسیر ورودی"
+   ],
+   "evidence": {
+    "basis": "ترکیب مشاهده ثبت‌شده کاربر (ورودی صفر) با قاعده شرطی C_INPUT_ZERO"
+   },
+   "limitations": "نقطه اندازه‌گیری اشتباه هم همین علامت را می‌دهد؛ اول نقطه و زمین را راستی‌آزمایی کنید.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "failure_code": "CONVERSION_STAGE_NO_OUTPUT",
+   "title": "مرحله تبدیل خروجی نمی‌دهد درحالی‌که ورودی حاضر است (فرضیه)",
+   "failure_type": "hypothesis_path",
+   "summary": "ترکیب ورودی غیرصفر و خروجی صفر، مرحله رگولاتور/Enable/فیدبک/حفاظت بار را در اولویت بررسی می‌گذارد.",
+   "symptom_codes": [
+    "no_power",
+    "no_output"
+   ],
+   "causes": [
+    "فرمان Enable/Standby",
+    "شبکه فیدبک یا قطعات بیرونی",
+    "حفاظت به‌علت بار پایین‌دست"
+   ],
+   "evidence": {
+    "basis": "قاعده شرطی C_INPUT_PRESENT_OUTPUT_ZERO بر پایه اندازه‌گیری‌های ثبت‌شده"
+   },
+   "limitations": "خرابی خود آی‌سی رگولاتور فقط یکی از چند احتمال است و با این داده ثابت نمی‌شود.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  }
+ ],
+ "tests": [
+  {
+   "test_code": "T_BOARD_INPUT_REFERENCE",
+   "title": "تأیید تغذیه در ورودی برد",
+   "purpose": "مشخص شود منبع و ولتاژ واقعی در نقطه‌ای که از روی نقشه/برچسب مشخص شده حاضر است یا نه.",
+   "steps": [
+    "مدل برد و نوع منبع را از روی برچسب، شماتیک یا مستند رسمی مشخص کنید.",
+    "اگر مدار اولیه برق شهر/ولتاژ بالا دارد، کار را به فرد واجد صلاحیت و ابزار ایمن بسپارید.",
+    "تنها پس از تعیین مرجع زمین و رنج ابزار، مقدار ورودی را در شرایط ثبت‌شده اندازه بگیرید.",
+    "نقطه، وضعیت روشن/خاموش، بار و مقدار مورد انتظار/منبع را همراه عدد ثبت کنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "شناسایی ورودی و ولتاژ نامی واقعی",
+    "صلاحیت و ابزار متناسب با سطح خطر",
+    "نقشه/مرجع زمین مشخص"
+   ],
+   "possible_outcomes": [
+    "ولتاژ در نقطه ثبت‌شده حاضر است",
+    "ولتاژ غایب/افت دارد",
+    "نتیجه نامطمئن یا شرایط نامعلوم"
+   ],
+   "limitations": "عدد مرجع عمومی وجود ندارد. این کار برای ورودی برق شهر/باس DC یا خازن شارژشده دستور تعمیرکار غیرمتخصص نیست.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_POWER_OFF_RESISTANCE",
+   "title": "بررسی مقاومت/اتصال بین ریل و زمین در حالت بی‌برق",
+   "purpose": "ارزیابی اولیه وجود مسیر کم‌مقاومت، بدون اعمال برق یا تزریق جریان.",
+   "steps": [
+    "برد را از همه منابع جدا کنید.",
+    "برای خازن‌های شارژشده فقط روش تخلیه ایمن و مناسب همان مدار را اجرا کنید؛ اتصال کوتاه مستقیم برای تخلیه ممنوع است.",
+    "پس از اطمینان از بی‌برق بودن، مقاومت ریل به زمین را با شرایط و محل دقیق ثبت کنید.",
+    "مقدار را با شماتیک، مدار سالم هم‌مدل یا اطلاعات معتبر مقایسه کنید؛ آستانه عمومی برای همه بردها وجود ندارد."
+   ],
+   "measurement_state": "power_off_only",
+   "risk_level": "caution",
+   "prerequisites": [
+    "منبع‌ها جدا",
+    "بی‌برقی/تخلیه طبق روش ایمن تأیید شده",
+    "شناسایی ریل و زمین از روی نقشه"
+   ],
+   "possible_outcomes": [
+    "مقاومت پایینِ قابل توضیح با بار/مسیر مدار",
+    "مقاومت غیرعادی نسبت به مرجع معتبر",
+    "نامشخص؛ نیازمند جداسازی/اطلاعات بیشتر"
+   ],
+   "limitations": "تست داخل مدار تحت تأثیر قطعات موازی، خازن‌ها و نیمه‌هادی‌ها است. اتصال کوتاه آزمایشی یا تزریق جریان پیشنهاد نمی‌شود.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_RAIL_EXPECTED_COMPARE",
+   "title": "مقایسه ریل اندازه‌گیری‌شده با مرجع همان برد",
+   "purpose": "ثبت اختلاف ریل با مقدار طراحی مستند، بدون فرض مقدار ثابت.",
+   "steps": [
+    "مقدار هدف و تلرانس را از شماتیک/دیتاشیت همان برد یا قطعه دقیق وارد کنید.",
+    "نقطه و مرجع زمین، وضعیت بار، زمان اندازه‌گیری و ابزار را ثبت کنید.",
+    "نتیجه را در همان شرایط با مقدار هدف و تلرانس مستند مقایسه کنید.",
+    "در صورت نوسان، از ابزار مناسب و روش اندازه‌گیری ایمن برای مشاهده تغییر زمانی استفاده کنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "منبع مقدار هدف معتبر",
+    "نقطه اندازه‌گیری شناسایی شده",
+    "شرایط تست ثبت شده"
+   ],
+   "possible_outcomes": [
+    "در محدوده مستند",
+    "خارج از تلرانس مستند",
+    "قابل قضاوت نیست؛ مرجع/تلرانس موجود نیست"
+   ],
+   "limitations": "اگر تلرانس/شرایط تست از منبع مشخص نشده باشد، اختلاف عددی به‌تنهایی حکم خرابی نیست.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_RESET_CLOCK_INSPECT",
+   "title": "بررسی Reset و Clock طبق دیتاشیت میکروکنترلر دقیق",
+   "purpose": "تفکیک افت تغذیه، نگه‌داشتن Reset، کلاک و عوامل نرم‌افزاری در ریست/عدم اجرا.",
+   "steps": [
+    "قطعه میکروکنترلر و نسخه دیتاشیت/شماتیک را دقیق شناسایی کنید.",
+    "تغذیه، RESET و نیاز/نوع منبع کلاک را طبق همان دیتاشیت و نقشه بررسی کنید.",
+    "برای سیگنال‌های روشن، از پروب و مرجع زمین مناسب استفاده کنید؛ نقطه/مقیاس/زمان را ثبت کنید.",
+    "بدون شماتیک یا مشخصات مدل، حد منطقی/فرکانس ثابت فرض نکنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "شماره قطعه دقیق",
+    "دیتاشیت/شماتیک همان مدل",
+    "آشنایی با اسیلوسکوپ و مرجع زمین"
+   ],
+   "possible_outcomes": [
+    "تغذیه/Reset/Clock با مشخصات مستند سازگار",
+    "انحراف مستند",
+    "اطلاعات کافی نیست"
+   ],
+   "limitations": "به‌علت تنوع معماری، مقدار و ترتیب بوت بین مدل‌ها قابل تعمیم نیست.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_BUS_ACTIVITY",
+   "title": "ثبت فعالیت فیزیکی باس ارتباطی",
+   "purpose": "مشخص شود خطوط/پروتکل و وضعیت الکتریکی با طراحی همان برد سازگار هستند یا خیر.",
+   "steps": [
+    "پروتکل، پایه‌ها، سطح ولتاژ و مرجع زمین را از نقشه/دیتاشیت شناسایی کنید.",
+    "در وضعیت کاری مشخص، فعالیت خطوط را با ابزار مناسب اندازه‌گیری/رمزگشایی کنید.",
+    "سطوح، زمان‌بندی، pull-up و termination را فقط با مستندات همان رابط مقایسه کنید.",
+    "اگر پروتکل یا ولتاژ I/O نامشخص است، تست را متوقف و مستندات را پیدا کنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "نوع رابط و پایه‌ها شناسایی شده",
+    "سطح ولتاژ و مرجع زمین روشن",
+    "ابزار منطقی/اسیلوسکوپ مناسب"
+   ],
+   "possible_outcomes": [
+    "ترافیک/سطوح قابل مشاهده",
+    "خط ثابت/بدون فعالیت",
+    "نتیجه نامعتبر به‌علت پیکربندی/نقطه نامشخص"
+   ],
+   "limitations": "وجود موج یا ترافیک به‌تنهایی سلامت پروتکل/فریم/نرم‌افزار را اثبات نمی‌کند.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_FUSE_PROTECTION_CHECK",
+   "title": "بررسی فیوز و حفاظت ورودی (بی‌برق)",
+   "purpose": "مشخص شود مسیر ورودی قبل از رگولاتور قطع است یا نه.",
+   "steps": [
+    "برد را از همه منابع جدا و بی‌برقی/تخلیه ایمن را طبق روش همان مدار تأیید کنید.",
+    "پیوستگی فیوز و مسیر ورودی را با مولتی‌متر در حالت بی‌برق بررسی و محل دقیق را ثبت کنید.",
+    "نتیجه را فقط برای همان نقطه گزارش کنید؛ فیوز سالم، سلامت پایین‌دست را ثابت نمی‌کند."
+   ],
+   "measurement_state": "power_off_only",
+   "risk_level": "caution",
+   "prerequisites": [
+    "برد بی‌برق و تخلیه‌شده طبق روش ایمن",
+    "شناسایی فیوز/حفاظت از روی برد یا شماتیک"
+   ],
+   "possible_outcomes": [
+    "نتیجه موافق مسیر بررسی",
+    "نتیجه مخالف/نیازمند بازبینی",
+    "نامشخص"
+   ],
+   "limitations": "فیوز سوخته معمولاً پیامد است نه علت ریشه‌ای؛ تعویض فیوز بدون یافتن علت می‌تواند آسیب را تکرار کند.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_REGULATOR_STAGE_CHECK",
+   "title": "بررسی مرحله رگولاتور: ورودی، Enable، فیدبک و خروجی",
+   "purpose": "تفکیک «رگولاتور فرمان نمی‌گیرد» از «رگولاتور خروجی نمی‌دهد».",
+   "steps": [
+    "مدل دقیق آی‌سی و پایه‌های VIN/EN/FB را از دیتاشیت همان قطعه مشخص کنید.",
+    "در شرایط ایمن و برق‌دارِ مجاز، VIN، پایه Enable و خروجی را نسبت به زمین واقعی همان مدار ثبت کنید.",
+    "مقدار فیدبک/خروجی را فقط با مرجع شماتیک/دیتاشیت همان برد مقایسه کنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "دیتاشیت قطعه دقیق",
+    "نقطه زمین و شرایط بار مشخص",
+    "صلاحیت کار با سطح ولتاژ مدار"
+   ],
+   "possible_outcomes": [
+    "نتیجه موافق مسیر بررسی",
+    "نتیجه مخالف/نیازمند بازبینی",
+    "نامشخص"
+   ],
+   "limitations": "اندازه‌گیری روی گره سوئیچینگ (PH/SW) بدون پروب و روش مناسب می‌تواند گمراه‌کننده یا خطرناک باشد.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_SHORT_LOCALIZATION",
+   "title": "مکان‌یابی بی‌برق مسیر کم‌مقاومت روی ریل",
+   "purpose": "محدودکردن ناحیه مسیر کم‌مقاومت بدون تزریق جریان.",
+   "steps": [
+    "فقط در حالت کاملاً بی‌برق و پس از تأیید تخلیه ایمن کار کنید.",
+    "مقاومت ریل را در چند نقطه/پس از جداسازی بخش‌ها (طبق شماتیک) مقایسه و ثبت کنید.",
+    "از تزریق جریان، اتصال کوتاه آزمایشی و حدس آستانه اهم عمومی خودداری کنید."
+   ],
+   "measurement_state": "power_off_only",
+   "risk_level": "caution",
+   "prerequisites": [
+    "برد بی‌برق",
+    "شماتیک یا امکان جداسازی بخش‌ها"
+   ],
+   "possible_outcomes": [
+    "نتیجه موافق مسیر بررسی",
+    "نتیجه مخالف/نیازمند بازبینی",
+    "نامشخص"
+   ],
+   "limitations": "مقاومت داخل‌مدار قطعی نیست؛ برای نتیجه قطعی ممکن است جداسازی قطعه لازم باشد که فقط باید آگاهانه انجام شود.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  },
+  {
+   "test_code": "T_MOTOR_DRIVER_CHECK",
+   "title": "بررسی درایور موتور: VM، کنترل‌ها و nFAULT",
+   "purpose": "تفکیک مشکل تغذیه درایور از سیگنال کنترل و حفاظت داخلی.",
+   "steps": [
+    "مدل درایور و پایه‌های VM/Enable/nFAULT را از دیتاشیت مشخص کنید.",
+    "VM و وضعیت منطقی ورودی‌های کنترل را در شرایط ایمن ثبت کنید.",
+    "خروجی موتور را بدون اتصال بارِ نامشخص و بدون دورزدن حفاظت‌ها ارزیابی نکنید."
+   ],
+   "measurement_state": "board_dependent",
+   "risk_level": "board_dependent",
+   "prerequisites": [
+    "دیتاشیت درایور دقیق",
+    "مشخص بودن موتور و سیم‌کشی"
+   ],
+   "possible_outcomes": [
+    "نتیجه موافق مسیر بررسی",
+    "نتیجه مخالف/نیازمند بازبینی",
+    "نامشخص"
+   ],
+   "limitations": "جریان نامی روی بدنه موتور/دیتاشیت درایور، مجوز اعمال همان جریان به هر بردی نیست؛ شرایط حرارتی تعیین‌کننده است.",
+   "source_key": null,
+   "validation_status": "needs_review"
+  }
+ ]
+}
